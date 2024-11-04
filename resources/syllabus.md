@@ -1,29 +1,31 @@
 ---
 # RDA learning materials metadata minimal set
-title: "The human readable name of the learning resource."
+title: "Technical Skills as the Bridge to Reproducible Research."
 author: 
     - Name of entity(ies) 
     - authoring the resource
 tags: 
-    - Keywords
-    - Tags 
-    - Resource Description
-
-abstract: "A brief synopsis about or description of the learning resource."
-primaryLanguage: "two letter code, Language in which the resource was originally published or made available."
-license: "A license document that applies to this content, typically indicated by URL"
-versionDate: "YYYY-MM-DD Version date for the most recently published or broadcast resource."
-urlToResource: "https://doi.org/10.5072/zenodo.1234567"
+    - Reproducibility
+    - Data Librarian 
+    - Versioning
+    - Data organisation
+    
+abstract: "This is a learning path in three parts, on an introductory level aimed at data librarians and others who are curious about how what reproducibility is and how to implement practices that support reproducibility on a beginner level. The first module introduces the concept od reproducibility and why it is important. The second module is concerned with the reproducbility crisis and actions we can take to improve reproducibility. The third module is devoted to putting theory into practice. It combines lectures on best practices and data hygiene in file organisation with hands-on tutorials using Git, Github and Jupyter Notebooks to improve reproducibility in a collaborative environment."   
+primaryLanguage: "EN"
+license: "Creative Commons License
+This work is licensed under a Creative Commons Attribution-Sharealike 4.0 International License."
+versionDate: "2025-01-17"
+urlToResource: "TBA_Link to Learning Platform"
 resourceURLType: "URL"
-targetGroup: "Principle users(s) for which the resource was designed."
-learningResourceType: "The predominant type or kind that characterizes the learning resource."
+targetGroup: "Data Librarians, data curious at the beginner level"
+learningResourceType: "Facilitated online learning: Lectures, discussion and self-paced tutorials"
 learningOutcome: 
-    - Descriptions of what knowledge, 
-    - skills or 
-    - abilities 
-    - students should acquire on completion of the resource.
-accessCost: "Choice stating whether or not there is a fee for use of the resource (CV = Y/N/Maybe with recommendation that further explanation of “Maybe” goes in the Description field"
-expertiseLevel: "Target skill level in the topic being taught; example values include: beginner, intermediate, advanced"
+    - Define reproducibility and replicability in the context of scientific research and explain how they are related and why they matter
+    - Explain what reproducible research looks like in practice 
+    - Explain the barriers to reproducibility and how to overcome them
+    - Use basic features of Git repositories and Jupyter notebooks to support reproducible research in your institution.
+accessCost: "No Fee"
+expertiseLevel: "Beginner"
 # template is a reserved keyword related to publishing of the Git book itself and not part of the RDA metadata schema. Please leave it as is and don't edit it manually
 template: signposting.html
 # hide is a reserved keyword related to the layout of the landing page and not part of the RDA metadata schema. Please leave it as is and don't edit it manually
@@ -33,30 +35,29 @@ hide:
 
 ![Header with Skills4EOSC funding information](./attachments/header.png)
 
-# Title of training 
+# Technical Skills as the Bridge to Reproducible Research
 
 {!RELEASE_NOTES.md!}
 
-# Type (Course/Workshop/Webinar)
+# Webinar
 
-## Date/Time: when it will be offered
+## Date/Time: 2025-01-17 (10am - 12pm CET) AND 2025-01-31 (9:30am-11:30am CET)
 
 - put available from date if it is self-paced
 
 ## Location
 
-- where it will be available
-- physical location
+- put link link to learning platform here
 - URL link to resources (and virtual room if online) should lead to the learning Skills4EOSC platform
 
 ## Training Description
 
-- what is the main goal/purpose of this training
-- short training description
+- Introduction to supporting reproducbile workflows for Data Librarians
+- This is a learning path in three parts, on an introductory level aimed at data librarians and others who are curious about how what reproducibility is and how to implement practices that support reproducibility on a beginner level. The first module introduces the concept od reproducibility and why it is important. The second module is concerned with the reproducbility crisis and actions we can take to improve reproducibility. The third module is devoted to putting theory into practice. It combines lectures on best practices and data hygiene in file organisation with hands-on tutorials using Git, Github and Jupyter Notebooks to improve reproducibility in a collaborative environment.
 
-## Target audience: target audience description
+## Target audience: Data Librarians and other data curious
 
-## Expertise Level / Skill Level: Beginner / Intermediate / Advanced
+## Beginner level
 
 ## Primary Language: English
 
@@ -68,15 +69,18 @@ hide:
 
 ## Duration
 
-- total training duration
+- 4 hours in total (2 x 2 hours over two days)
 
 ## Training objectives
 
-- list of specific training objectives
+- Define reproducibility and replicability in the context of scientific research and explain how they are related and why they matter
+    - Explain what reproducible research looks like in practice 
+    - Explain the barriers to reproducibility and how to overcome them
+    - Use basic features of Git repositories and Jupyter notebooks to support reproducible research in your institution.
 
 ## Keywords
 
-Keywords or tags used to describe the training.
+Reproducibility, RDM, File Organisation
 
 ## Agenda: Training Schedule - Training Structure
 
@@ -92,31 +96,31 @@ Keywords or tags used to describe the training.
 
 ## Resources and Materials
 
-- location of available resources for the training
+- TO ADD
 
 ## Certification Information
 
-- if any
+- To ADD
 
 ## Author(s)
 
-- List of people involved in preparing the training
-- format: Name Surname, comma separated
+- Tuulikki Alamettälä, Mathilde Bernier , Mareike Buus, Benjamin Derksen, Alexandra Fogtmann-Schulz, Christine Hadrossek, Joanna Janik, Agnes Jasinska, Voydan Kjorveziroski, Lorna Wildgaard
+  
 
 # Trainer(s)
 
-- List of people involved in delivering the training
-- format: Name Surname [![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0123-4561-8999-9999), Name Surname [![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0123-4561-8999-9999), ...
+- Agnes Jasinska[![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0009-0000-7934-3679), Voydan Kjorveziroski[![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0000-0003-0419-4300), Marieke Buus[![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0000-0002-1459-1345) 
+
 
 ## Contact information
 
-- how to reach out to training organizers
+- Training organisers: Lorna Wildgaard (lowi@kb.dk) and Benjamin Derksen (bder@kb.dk). 
 
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-## DOI
+## DOI TO ADD
 
 [https://doi.org/10.5072/zenodo.1234567](https://doi.org/10.5072/zenodo.1234567)
 
