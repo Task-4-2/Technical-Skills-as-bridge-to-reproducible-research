@@ -52,7 +52,7 @@ hide:
 
 ## Training Description
 
-- Introduction to supporting reproducbile workflows for Data Librarians
+- Introduction to supporting reproducible workflows for Data Librarians
 - This is a learning path in three parts, on an introductory level aimed at data librarians and others who are curious about how what reproducibility is and how to implement practices that support reproducibility on a beginner level. The first module introduces the concept od reproducibility and why it is important. The second module is concerned with the reproducbility crisis and actions we can take to improve reproducibility. The third module is devoted to putting theory into practice. It combines lectures on best practices and data hygiene in file organisation with hands-on tutorials using Git, Github and Jupyter Notebooks to improve reproducibility in a collaborative environment.
 
 ## Target audience: Data Librarians and other data curious
