@@ -34,13 +34,12 @@ authors:
     orcid: "https://orcid.org/0009-0000-7934-3679"
     affiliation: "University of Edinburgh"
 title: "Technical Skills as a bridge to Reproducible Research"
-abstract: "This 2-hour long unit provides trainers with the core skills and knowledge to teach the nuances of licensing research outputs. After completing the unit, the trainer will be able to reflect on how to tailor the content to their local environment, and have more knowledge about when to apply licenses throughout a project, while complying with funders, institutional requirements and the research discipline/aims of the project."
-version: Skills4EOSC
+abstract: "This is a learning path in three parts, on an introductory level aimed at data librarians and others who are curious about how what reproducibility is and how to implement practices that support reproducibility on a beginner level. The first module introduces the concept of reproducibility and why it is important. The second module is concerned with the reproducbility crisis and actions we can take to improve reproducibility. The third module is devoted to putting theory into practice. It combines lectures on best practices and data hygiene in file organisation with hands-on tutorials using Git, Github and Jupyter Notebooks to improve reproducibility in a collaborative environment."
 doi: 
 date-released: '2024-01-17'
 license: CC-BY-4.0
 license-url: https://creativecommons.org/licenses/by/4.0/legalcode.txt
 keywords:
   - Reproducibility
-  - research output
+  - Research Output
 repository: https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research
