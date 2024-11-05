@@ -114,7 +114,7 @@ Reproducibility, RDM, File Organisation
 
 ## Author(s)
 
-- Tuulikki Alamettälä, Mathilde Bernier , Mareike Buus, Benjamin Derksen, Alexandra Fogtmann-Schulz, Christine Hadrossek, Joanna Janik, Agnes Jasinska, Voydan Kjorveziroski, Josephine Nordling, Lorna Wildgaard
+- Tuulikki Alamettälä, Mathilde Bernier , Mareike Buus, Benjamin Derksen, Alexandra Fogtmann-Schulz, Christine Hadrossek, Joanna Janik, Agnes Jasinska, Voydan Kjorveziroski, Josefine Nordling, Lorna Wildgaard
   
 
 # Trainer(s)
