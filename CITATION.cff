@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "If you use these learning materials, please cite it as below."
 authors:
-  - family-names: "Wildgaard"
-    given-names: "Lorna"
-    orcid: "https://orcid.org/0000-0002-3900-5058"
-    affiliation: "Royal Library, Denmark"
+  - family-names: Wildgaard
+    given-names: Lorna
+    orcid: https://orcid.org/0000-0002-3900-5058
+    affiliation: Royal Library, Denmark
   - family-names: "Derksen"
     given-names: "Benjamin"
     orcid: "https://orcid.org/0000-0001-9144-7518"
