@@ -82,17 +82,27 @@ hide:
 
 Reproducibility, RDM, File Organisation
 
-## Agenda: Training Schedule - Training Structure
+## Agenda: Training Schedule - Day 1
 
-| Date/Time | Topic             |
+| 17-01-2025/10:00am | Unit           |
 |-----------|-------------------|
-| timeslot  | training unit 1   |
-| timeslot  | training unit 2   |
-| timeslot  | coffee break      |
-| timeslot  | training unit 3   |
-| timeslot  | lunch break       |
-| timelsot  | training unit 4   |
-| timeslot  | training unit 5   |
+| 10:00-10:20  | Reproducibility and replicability in scientific research   |
+| 10:20-10:50  | What reproducibility means in practice   |
+| 10:50-11:00 |  Coffee break      |
+| 11:00-11:30  | Reproducibility crisis and remedies   |
+| 11:30-11:50  | Case studies and activities      |
+| 11:50-12:00  | Introduction to Day 2 and Evaluation  |
+
+## Agenda: Training Schedule - Day 2
+
+| 31-01-2025/09:30 am | Unit           |
+|-----------|-------------------|
+| 09:30-09:45  | Technical aspects of reproducibilty & replicability  |
+| 09:45-10:30  | Challenges related to Data Management  |
+| 10:30-10:40 |  Coffee break      |
+| 10:40-11:20  | Ensuring data longevity  |
+| 11:20-11:30  | Toolbox and evaluation     |
+
 
 ## Resources and Materials
 
