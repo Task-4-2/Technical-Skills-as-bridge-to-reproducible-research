@@ -1,4 +1,4 @@
-site_name: FAIR-by-Design Template Repository
+site_name: Technical skills are the bridge to reproducible research
 docs_dir: resources
 theme:
   name: material
