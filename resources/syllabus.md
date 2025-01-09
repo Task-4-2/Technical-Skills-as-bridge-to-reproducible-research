@@ -87,10 +87,10 @@ Reproducibility, RDM, File Organisation
 |-----------|-------------------|
 | 10:00-10:20  | Reproducibility and replicability in scientific research   |
 | 10:20-10:50  | What reproducibility means in practice   |
-| 10:50-11:00 |  Coffee break      |
-| 11:00-11:30  | Reproducibility crisis and remedies   |
-| 11:30-11:50  | Case studies and activities      |
-| 11:50-12:00  | Introduction to Day 2 and Evaluation  |
+| 10:50-11:00  |  Coffee break                            |
+| 11:00-11:30  | Reproducibility crisis and remedies      |
+| 11:30-11:50  | Case studies and activities              |
+| 11:50-12:00  | Introduction to Day 2 and Evaluation     |
 
 ## Agenda: Training Schedule - Day 2
 
