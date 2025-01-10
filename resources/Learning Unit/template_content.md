@@ -78,6 +78,7 @@ Reproducibility benefits researchers directly, not just the broader scientific c
 - The Turing Way Community. (2022). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.2). Zenodo. https://doi.org/10.5281/zenodo.7625728
 - Why is Reproducibility so Important to Scientists: Guide for 2022. https://genemod.net/blog/why-is-reproducibility-so-important-to-scientists
 
+
   
 
 # Learning Unit 2: Reproducibility Crisis and Remedies
@@ -220,6 +221,8 @@ To understand why research integrity matters, this activity examines what happen
 * [Assessing the reproducibility of research results in EU Framework Programmes for Research](https://op.europa.eu/en/publication-detail/-/publication/36fa41a8-dbd5-11ec-a534-01aa75ed71a1/language-en)                                               
 
 
+
+
 # Learning Unit 3: Technical Aspects
 
 The goal of this unit is to showcase concrete ways on how to put into practice the various topics and recommendations regarding reproducible research discussed during the previous training session.
@@ -238,7 +241,7 @@ After completing this unit, you will be able to:
 - 150 mins
 
 ## Prerequisites
-- The technical aspects is an introductory unit in which the concepts of file naming schemes, file versioning, Git, and lab notebooks are introduced. As the unit is targeted at the beginner level, no explicit preparation is needed before attending the session. However, accounts on the following platforms will be useful for conducting the exercises:
+The technical aspects is an introductory unit in which the concepts of file naming schemes, file versioning, Git, and lab notebooks are introduced. As the unit is targeted at the beginner level, no explicit preparation is needed before attending the session. However, accounts on the following platforms will be useful for conducting the exercises:
 
 GitHub. Details about account creation are available on the [GitHub docs page](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
 
@@ -272,6 +275,7 @@ Using advanced searching tools to find a given file, without adopting a more sys
 No golden rule. Different conventions for different file groups are possible.
 
 Think about what is important:
+
 * The date
 * The format
 * Description
@@ -294,10 +298,11 @@ A common pitfall with lexicographical sorting is the sorting of numbers. To avoi
 * Do not use the same name with changed casing: image1.png and Image1.png
 
 Proper filenaming examples: 
-[investigator]_[method]_[subject]_[YYYYMMDD]_[version].[ext]
-[project #]_[method]_[version]_[YYYYMMDD].[ext]
-[YYYYMMDD]_[version]_[subject]_[datacollector].[ext]
-[type of file]_[author]_[date].[ext]
+
+* [investigator]_[method]_[subject]_[YYYYMMDD]_[version].[ext]
+* [project #]_[method]_[version]_[YYYYMMDD].[ext]
+* [YYYYMMDD]_[version]_[subject]_[datacollector].[ext]
+* [type of file]_[author]_[date].[ext]
 
 ### Tips to applying filenaming conventions
 Dealing with an existing set of files which have not adopted a consistent naming scheme previously can be tedious and error prone, should the renaming process be manually conducted. An alternative is to use automated bulk renaming tools:
@@ -311,6 +316,7 @@ Git is the most popular file versioning tool today, available as open-source sof
 
 
 ### Git features and terminology
+
 *Repository* – analogy to a folder with enabled file versioning features.
 *Clone* – local copy of a remote repository with its full version history and file contents.
 *Commit* – a record of changes to a file or a set of files. Described by a commit message.
@@ -326,6 +332,7 @@ In most cases, the most popular free Git hosting services will be sufficient for
 
 ### Git feature spotlight
 Repository visibility options are:
+
 *Private* – only designated people have access and not visible to search engines
 *Public* – anyone can view the repository, indexed by search engines
 
@@ -341,11 +348,13 @@ including description of subdirectory contents and file naming schemes and is sh
 
 ### More ways to use Git
 Git itself is free and open-source software and there are multiple ways to interact with Git repositories:
+
 * Official command line application – git
 * Dedicated desktop applications
 * GitHub Desktop
 * Sourcetree (BitBucket)
 * Sublime Merge
+  
 Find a [Step-by-step guide](https://fair-by-design-methodology.github.io/FAIR-by-Design_ToT/latest/Stage%204%20%E2%80%93%20Produce/08-Development%20Tools/08-Introduction%20to%20Markdown%20and%20Git/#version-management) on getting started with a desktop client as part of the FAIR-by-Design ToT Development Tools learning unit.
 
 ### Tracking the lifecycle of a file with Git
@@ -370,6 +379,7 @@ It is good practice to apply the same backup strategy as used for the rest of yo
 
 ### Final points about backup aspects
 Careful consideration when choosing a cloud storage service:
+
 * Security aspects
 * Privacy policy (Privacy aspects should be taken into careful consideration when choosing online storage services. It is advised to carefully read both the privacy and terms of use policies).
 * Data mining
@@ -385,6 +395,7 @@ Electronic Lab Note books can assist in online and offline searching, output in 
 
 ### Setting up a Jupyter environment
 Local installation
+
 * pip install jupyterlab
 * jupyterlab notebook
 The local installation instructions assume that the user already has a Python environment setup.
@@ -400,11 +411,12 @@ Jupyter can be connected directly to a Git repository. All files are available i
 Note, that many Git hosts offer a dedicated read-only view for Jupyter notebooks
 
 ### Do's and Don't's with Jupyter Notebooks
-✅ Do serialize or cache the intermediate outputs of long-running steps.
-✅ Do take care to execute the steps serially, one after the other, before publishing the notebook.
-❌ Don’t ever edit your raw data, especially not manually. This includes changing file formats or fixing errors by hand.
-❌ Don’t overwrite your raw data with a newly processed or cleaned version. Notebooks should be as idempotent as possible.
-❌ Don’t save multiple versions of the raw data.
+
+* ✅ Do serialize or cache the intermediate outputs of long-running steps.
+* ✅ Do take care to execute the steps serially, one after the other, before publishing the notebook.
+* ❌ Don’t ever edit your raw data, especially not manually. This includes changing file formats or fixing errors by hand.
+* ❌ Don’t overwrite your raw data with a newly processed or cleaned version. Notebooks should be as idempotent as possible.
+* ❌ Don’t save multiple versions of the raw data.
 
 ### Zenodo and Github integration
 The step-by-step instructions on how to achieve the Git<->Zenodo integration are out of scope of this presentation and participants are invited to have a look at [Referencing and citing content guide from GitHub](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
