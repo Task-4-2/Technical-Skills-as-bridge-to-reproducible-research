@@ -1,6 +1,6 @@
 ---
-title: "FAIR Learning Unit Learning Content Structure Template"
-author: "Skills4EOSC T2.3"
+title: "Content of the Learning Path"
+author: "Skills4EOSC T4.2"
 tags: 
     - FAIR-by-Design Learning Materials
     - FAIR Learning Objects
