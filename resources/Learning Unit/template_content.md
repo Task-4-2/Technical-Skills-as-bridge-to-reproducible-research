@@ -84,8 +84,8 @@ Reproducibility benefits researchers directly, not just the broader scientific c
 
 ## Learning Objectives
 
-·	Explain what reproducible research looks like in practice
-·	Explain the barriers to reproducibility and how to overcome them
+* Explain what reproducible research looks like in practice
+* Explain the barriers to reproducibility and how to overcome them
 
 
 ## Duration
@@ -102,22 +102,22 @@ Reproducibility benefits researchers directly, not just the broader scientific c
 This unit introduces the Reproducibility Crisis, what it is and actions that can be taken to implement reproducible workflows to counter this crisis.
 
 ### What is the Reproducibility Crisis?
-Nature did a rather extensive survey a few years ago on reproducibility. It showed that 90 % of the survey participants – the researchers - thinks that a reproducibility crisis is a fact - either slightly or significantly (1,576 scientist in sample).
+[Nature](https://www.nature.com/articles/533452a) did a rather extensive survey a few years ago on reproducibility. It showed that 90 % of the survey participants – the researchers - thinks that a reproducibility crisis is a fact - either slightly or significantly (1,576 scientist in sample).
 
-- More than 70 % of researchers have failed to reproduce another scientist’s experiments. More than half have failed to reproduce their own experiments. Publishing replicated positive studies did not feel very motivating (24 %) and journals are reluctant towards publishing negative replication results (13 %)
-- More than 60 % experienced failure in reproducibility due to pressure to publish and selective reporting. Adding to the difficulties to comply to reproducibility practices were also competition for grants and growing amount of bureaucracy demands
-- Almost 90 % felt that a more robust experimental design and improved statistics and mentorship could help to solve the reproducibility crisis. Also enhanced practices and journal checklists were ranked high
-- 80 % thinks that research funders and publishers should do much more to address this issue
-One analysis estimates that 85% of biomedical research efforts are wasted
+* More than 70 % of researchers have failed to reproduce another scientist’s experiments. More than half have failed to reproduce their own experiments. Publishing replicated positive studies did not feel very motivating (24 %) and journals are reluctant towards publishing negative replication results (13 %)
+* More than 60 % experienced failure in reproducibility due to pressure to publish and selective reporting. Adding to the difficulties to comply to reproducibility practices were also competition for grants and growing amount of bureaucracy demands
+* Almost 90 % felt that a more robust experimental design and improved statistics and mentorship could help to solve the reproducibility crisis. Also enhanced practices and journal checklists were ranked high
+* 80 % think that research funders and publishers should do much more to address this issue
+Another analysis by [Macleod](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13)62329-6/abstract) estimates that 85% of biomedical research efforts are wasted
 
 In summary, lack of reproducibility has a negative impact on public trust in the conclusions of science. Trust and confidence are important for science, but have different meanings for scientists, citizens and policy-makers. The aim is to make science reproducible. Reproducible science is where all information relevant to the  work, including, but not limited to, text, data and code, is made available, such that an independent researcher can reproduce the results.
 
 The overarching categories of factors that impact reproducibility in research are:
 
-**Technical Factors:** Issues related to tools, processes, and materials that can introduce variability or error.
-**Human Factors:** Behavioral and procedural issues, such as errors or poor practices in data recording or sharing.
-**Study Design & Statistics:** Problems with the planning and execution of research studies, including misuse of statistical methods.
-**Rewards & Incentives:** Structural pressures in academia that encourage practices undermining reproducibility, such as prioritizing novelty over rigor.
+* **Technical Factors:** Issues related to tools, processes, and materials that can introduce variability or error.
+* **Human Factors:** Behavioral and procedural issues, such as errors or poor practices in data recording or sharing.
+* **Study Design & Statistics:** Problems with the planning and execution of research studies, including misuse of statistical methods.
+* **Rewards & Incentives:** Structural pressures in academia that encourage practices undermining reproducibility, such as prioritizing novelty over rigor.
 
 Reproducibility is one of the principle at the core of open science - Both focus on transparency and this principle is particularly important to reinforce the rigor of scientific results
 
@@ -183,10 +183,10 @@ Worth noting, that this report is focused on how well organised an organisation 
 - Barker, M., & ChueHong, N. (2024). Assessment worksheet. Zenodo.
 
 ## How can we move forward?
-**Build communities** – elevating trust requires shared risk and reward : Use  of narrow metrics, e.g., pub count, impact factor, leads to poor  results – need a community to improve practices - Risky for single team  to invest heavily​
-**Collaborate with stakeholders** (publishers and funders) to raise expectations  : transparent results, common terminology, elevated expectation, high quality software​
-**Invest in software ecosystems** – easier to improve quality & share investments:  high quality ecosystems, investement in software skills, new software tools and methodologies​
-**Transform software research into science** – and capture science fundings: scientific software needs a research focus  - improve scientific software using science​
+* **Build communities** – elevating trust requires shared risk and reward : Use  of narrow metrics, e.g., pub count, impact factor, leads to poor  results – need a community to improve practices - Risky for single team  to invest heavily​
+* **Collaborate with stakeholders** (publishers and funders) to raise expectations  : transparent results, common terminology, elevated expectation, high quality software​
+* **Invest in software ecosystems** – easier to improve quality & share investments:  high quality ecosystems, investement in software skills, new software tools and methodologies​
+* **Transform software research into science** – and capture science fundings: scientific software needs a research focus  - improve scientific software using science​
 
 ## Summary
 1. Reproducibility has to be thought of as a long-term goal, where concepts and terminologies are to be discussed among different communities to make sure that there is a coherent terminologyin place thatall communities can understand. According to the literature review and interviews done, these types of engagement are more and more starting to occur
@@ -201,10 +201,10 @@ Worth noting, that this report is focused on how well organised an organisation 
 
 ## Key Takeaways
 
-- Lack of reproducibility has a negative impact on public trust in the conclusions of science!
-- Data reproducibility is key to Open Science, but FAIR principles alone don't guarantee it
-- Proper management of data and code, combined with well-documented computational environments, is essential for ensuring the reproducibility of research results
-- Data reproducibility practices must be supported by institutional policies that establish a strong regulatory framework to enforce and maintain them over time
+* Lack of reproducibility has a negative impact on public trust in the conclusions of science!
+* Data reproducibility is key to Open Science, but FAIR principles alone don't guarantee it
+* Proper management of data and code, combined with well-documented computational environments, is essential for ensuring the reproducibility of research results
+* Data reproducibility practices must be supported by institutional policies that establish a strong regulatory framework to enforce and maintain them over time
 
 ### Learning Activity
 This unit has a learning activity about scientific misconduct and is described here: [Activities](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/tree/main/resources/Learning%20Unit/Activities)
@@ -216,7 +216,7 @@ To understand why research integrity matters, this activity examines what happen
 - If you want to know more about reproducible research practices, you can look at more cases studies on http://www.practicereproducibleresearch.org/ 
 
 - If you want to know more about reproducibility of scientific results in Europe : 
-[Reproducibility of scientific results in the EU](https://op.europa.eu/en/publication-detail/-/publication/6bc538ad-344f-11eb-b27b-01aa75ed71a1)
-[Assessing the reproducibility of research results in EU Framework Programmes for Research](https://op.europa.eu/en/publication-detail/-/publication/36fa41a8-dbd5-11ec-a534-01aa75ed71a1/language-en)                                               
+* [Reproducibility of scientific results in the EU](https://op.europa.eu/en/publication-detail/-/publication/6bc538ad-344f-11eb-b27b-01aa75ed71a1)
+* [Assessing the reproducibility of research results in EU Framework Programmes for Research](https://op.europa.eu/en/publication-detail/-/publication/36fa41a8-dbd5-11ec-a534-01aa75ed71a1/language-en)                                               
 
 
