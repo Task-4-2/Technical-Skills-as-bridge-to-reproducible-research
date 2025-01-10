@@ -118,7 +118,7 @@ Reproducibility, RDM, File Organisation
 
 # Trainer(s)
 
-- Agnes Jasinska[![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0009-0000-7934-3679), Vojdan Kjorveziroski[![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0000-0003-0419-4300), Marieke Buus[![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0000-0002-1459-1345) , Josefine Nordling [![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0000-0002-6974-2825)
+- Agnes Jasinska[![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0009-0000-7934-3679), Tuulikki Alamettälä [![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0000-0002-3247-6324), Vojdan Kjorveziroski[![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0000-0003-0419-4300), Marieke Buus[![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0000-0002-1459-1345) , Josefine Nordling [![ORCID logo](./attachments/orcid_16x16.webp)](https://orcid.org/0000-0002-6974-2825)
 
 
 ## Contact information
