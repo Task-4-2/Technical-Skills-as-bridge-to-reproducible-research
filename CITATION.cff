@@ -41,6 +41,10 @@ authors:
     given-names: "Agnes"
     orcid: "https://orcid.org/0009-0000-7934-3679"
     affiliation: "University of Edinburgh"
+  - family-names: "Alamettälä"
+    given-names: "Tuulikki"
+    orcid: "https://orcid.org/0000-0002-3247-6324"
+    affiliation: "Tampere University"
 title: "Technical Skills as a bridge to Reproducible Research"
 abstract: "This is a learning path in three parts, on an introductory level aimed at data librarians and others who are curious about how what reproducibility is and how to implement practices that support reproducibility on a beginner level. The first module introduces the concept of reproducibility and why it is important. The second module is concerned with the reproducbility crisis and actions we can take to improve reproducibility. The third module is devoted to putting theory into practice. It combines lectures on best practices and data hygiene in file organisation with hands-on tutorials using Git, Github and Jupyter Notebooks to improve reproducibility in a collaborative environment."
 doi: 
