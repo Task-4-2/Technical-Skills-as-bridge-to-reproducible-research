@@ -40,13 +40,35 @@ After completing this unit, you will be able to:
 - The content is designed to be taught online, therefore a virtual teaching platform with breakout rooms is used to facilitate the content and activities.
 
 ## Learning Content Topic
+The unit discusses the difference between an original research study and a replication study. Both play an important role in the scientific process. But how do we go from science to knowledge? Or from a single scientific result to reliable knowledge and understanding of some phenomenon or topic? 
+Step one in the scientific method is to formulate a research question or hypothesis. 
+Step two is to design a research study to answer that question or test that hypothesis, using appropriate research methods. For instance, we may want to conduct an experiment, which means manipulating an independent variable and measuring a dependent variable to determine cause-and-effect. Once we decide on the appropriate study design, step three is data collection and step four is data analysis. 
+In step five, after we analyze all the data, we get our results – we get the answer to our research question or the test of our hypothesis.
 
-The content of the unit is described in this document: [Unit1_InstructorNotes](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/blob/59f6fd436090a06e6f0225714777763dece2fb29/resources/Learning%20Unit/attachments/Unit%201%20instructor%20notes%20DRAFT.docx)
+However, one research study and one result can be very exciting and can give us a hint of how something works, but it is not reliable enough. We could get lucky and get a great result purely by chance. Or the phenomenon we study could be very complex and the data could be messy. There are lots of reasons why a single research result is only the start of the scientific investigation, not the end of it.  
+
+This unit introduces the learner to what reproducibility is and how it benefits science. In conclusion, the unit addresses the barriers to reproducibility, which are described as:
+
+ 1. Cultural Barriers:
+·	Researchers are rewarded for producing high-impact, novel results, not for making their work reproducible.
+·	The ‘publish or perish’ culture pressures them to prioritize speed over careful validation.
+·	Success is often measured by quantity and impact, not quality or reproducibility.
+2. Publishing Barriers:
+·	Journals favor new findings over replication studies.
+·	Many journals don’t require authors to share data, code, or methods, and peer reviewers don’t often have the time or expertise to verify reproducibility.
+3. Technical Barriers:
+·	(Lack of Standardization) Different fields often use their own methods, tools, and protocols, which makes it harder to reproduce work across studies. 
+·	(Data and Software Availability) Outdated or unavailable software can make it impossible to reproduce results.
+·	(Lack of Infrastructure) Some fields don’t have reliable platforms to store and share large datasets, and reproducing complex simulations can require resources that not everyone has. 
+·	(Collaboration and Data Integration Challenges) Interdisciplinary work can face unique problems, like differences in data formats, methods, or terminology. Large datasets also come with logistical and technical challenges.
+
+
+The content of the unit is described in more detail in this document where each slide used in the training is enriched with speaker notes: [Unit1_InstructorNotes](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/blob/59f6fd436090a06e6f0225714777763dece2fb29/resources/Learning%20Unit/attachments/Unit%201%20instructor%20notes%20DRAFT.docx)
 
 
 ### Related Learning Materials
 
-Follow the links to find activities [Activities](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/tree/main/resources/Learning%20Unit/Activities)
+Follow the link to find activities. Activities 1 and 2 are used in this unit. [Activities](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/tree/main/resources/Learning%20Unit/Activities)
 
 ## Summary
 
