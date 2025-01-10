@@ -6,23 +6,13 @@ tags:
     - FAIR Learning Objects
     - FAIR Learning Unit Template
 ---
+## Introduction
+In this document, you will find a short description of the three units that make up the learning path.
 
-# Learning Unit Template
+# Learning Unit 1: Reproducibility and Replicability in Scientific Research
 
-Introduction
----
-title: "Reproducibility and Replicability in Scientific Research"
-author: "Agnes Janiska & Tuulikki Alamettälä"
-tags: 
-    - FAIR-by-Design Learning Materials
-    - FAIR Learning Objects
-    - FAIR Learning Unit Template
----
-
-# Learning Unit 1
-
-This session focuses on reproducibility and replicability in scientific research. It is the first unit in the learning path title "Technical skills are the bridge to reproducible research: An introduction for data librarians".
-In this session we discuss what reproducibility is, the barriers there are to reproducibility and the benefits of reproducibility.
+This unit focuses on reproducibility and replicability in scientific research. It is the first unit in the learning path title "Technical skills are the bridge to reproducible research: An introduction for data librarians".
+In this unit we discuss what reproducibility is, the barriers there are to reproducibility and the benefits of reproducibility.
 
 ## Learning Objectives
 
