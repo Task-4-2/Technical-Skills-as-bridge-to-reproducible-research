@@ -19,6 +19,7 @@ In this unit we discuss what reproducibility is, the barriers there are to repro
 
 ## Learning Objectives
 After completing this unit, you will be able to:
+
 ·	Define reproducibility and replicability in scientific research
 ·	Explain how reproducibility and replicability are related but also different
 ·	Describe benefits of reproducibiliy to researchers
@@ -77,6 +78,8 @@ Reproducibility benefits researchers directly, not just the broader scientific c
 - The Turing Way Community. (2022). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.2). Zenodo. https://doi.org/10.5281/zenodo.7625728
 - Why is Reproducibility so Important to Scientists: Guide for 2022. https://genemod.net/blog/why-is-reproducibility-so-important-to-scientists
 
+  
+
 # Learning Unit 2: Reproducibility Crisis and Remedies
 
 ## Learning Objectives
@@ -100,80 +103,120 @@ This unit introduces the Reproducibility Crisis, what it is and actions that can
 
 ### What is the Reproducibility Crisis?
 Nature did a rather extensive survey a few years ago on reproducibility. It showed that 90 % of the survey participants – the researchers - thinks that a reproducibility crisis is a fact - either slightly or significantly (1,576 scientist in sample).
+
 - More than 70 % of researchers have failed to reproduce another scientist’s experiments. More than half have failed to reproduce their own experiments. Publishing replicated positive studies did not feel very motivating (24 %) and journals are reluctant towards publishing negative replication results (13 %)
 - More than 60 % experienced failure in reproducibility due to pressure to publish and selective reporting. Adding to the difficulties to comply to reproducibility practices were also competition for grants and growing amount of bureaucracy demands
 - Almost 90 % felt that a more robust experimental design and improved statistics and mentorship could help to solve the reproducibility crisis. Also enhanced practices and journal checklists were ranked high
 - 80 % thinks that research funders and publishers should do much more to address this issue
 One analysis estimates that 85% of biomedical research efforts are wasted
 
-Refer to a different learning unit using a relative link. For an example, see the [Syllabus](../index.md) file.
+In summary, lack of reproducibility has a negative impact on public trust in the conclusions of science. Trust and confidence are important for science, but have different meanings for scientists, citizens and policy-makers. The aim is to make science reproducible. Reproducible science is where all information relevant to the  work, including, but not limited to, text, data and code, is made available, such that an independent researcher can reproduce the results.
 
-*Example italic text*
+The overarching categories of factors that impact reproducibility in research are:
 
-**Example bold text**
+**Technical Factors:** Issues related to tools, processes, and materials that can introduce variability or error.
+**Human Factors:** Behavioral and procedural issues, such as errors or poor practices in data recording or sharing.
+**Study Design & Statistics:** Problems with the planning and execution of research studies, including misuse of statistical methods.
+**Rewards & Incentives:** Structural pressures in academia that encourage practices undermining reproducibility, such as prioritizing novelty over rigor.
 
-### Lists
+Reproducibility is one of the principle at the core of open science - Both focus on transparency and this principle is particularly important to reinforce the rigor of scientific results
 
-Example numbered bullets:
+### A reproducible research lifecycle
+The more of the research cycle is available and accessible, the more reproducible and verifiable the work. A paper only presents the output, but a format that is gaining more and more traction is the research compendium. This combines data and code with (information about the) environment, as well as usage information and a license. A research compendium can be made executable as well, allowing full reproduction of the project at the click of a button.
 
-1. numbered list one
-2. two
-3. three
+Why code? A proper basic understanding of programming is incredibly useful to find, store, utilize, document and interpret data. It is the first step towards making research reproducible. Large datasets, or the option to use specifically developed tools, can also be reasons a researcher will need to use a programming language like R, or Python.
 
-Example unnumbered list.
+Unfortunately, having access to data and a script does not guarantee that a project can be faithfully reproduced. Also, attaching code as supplementary material does not allow software to stand as a research product in its own right. Making science reproducible requires an open, adequate combination of data and software.
 
-- unnumbered list
-- item two
-- item three
-    - subitem
-    - use 4 spaces to create nested subitem
+Good version control is essential, and requires its own tools. Also, unlike a paper, software is not stand-alone, and requires extra work to ensure it can function faithfully on another machine, or in another time. Challenging, and there is a need to consider how to license software and how to cite used software (and what platform to use for publishing it).
 
-You can also create mixed lists:
+### How to improve reproducibility
+Data can be FAIR but if they are of poor quality or the methods of collection and analysis are biased or poorly described, the research will not necessarily be reproducible.
+It is necessary that experimental protocols, analysis methods, source codes and software used are also shared in a complete and detailed manner. These aspects are not always covered by FAIR.
 
-- mixed list
-    1. now numbered subitem
-    2. subitem number two
-- back to mixed list level 1 bullet
+There are different levels of reproducibility.  the gold standard being that the code, all documentation and installation instructions are available as well as access to a virtual environment, such as a jupyter notebook, where you can re-run the analysis. Basically sharing data and code alone is not enough.
 
-### Images
+#### Care about data
+To care about data we have to keep in mind that it is important to:
 
-To add an image, first place the image in the /attachments folder and then use a relative link similar to above using a ! in front. 
-All images should be located in the attachments folder that is on the same level with the content file. 
+- Submit your datasets to a trustworthy repository​
+- Provide accurate metadata​
+- Choose the right licence (ODBL, CCBY, …)​
+- When collecting data:​
+- Use standards (units/measurement tools, reference documents​) and the right formats (open, sustainable, machine-readable) 
+- When processing​ data:
+- Do not modify the raw data​
+- Favor the command line: simple, clear, generic, sober programs with naming rules for example​
+- Work in a structured, shared and backed-up environment
 
-![alternative text for accessibility an image of a macaw parrot](attachments/macaw-g8f80c4f64_640.jpg)
+#### Care about Code
+To care about code we have to keep in mind that it is important to:
 
-Caption: Macaw Parrot
-Image by [Karina Copa](https://pixabay.com/users/kayuli-781524) from [Pixabay](https://pixabay.com)
+- Describe, comment on your codes and their sequences using flowcharts, notebook​
+- Use development standards: framework (Django, Symfony), common programming languages, free (R, Python) 
+- Work in a shared and protected environment ​
+- Choose the right licenses: Apache, GNU GPLv3, MIT  ​
+- Work with version management tools -> software forge (a forge is a web-based collaborative software platform for developing and sharing computer applications),  continuous integration
+- Archive your code (Software Heritage)​
+- Publish your code/software in open journals
 
+#### Care about Environment
+To care about environment  we have to keep in mind that it is important to:
 
-Don't forget attribution if the image was not created by you. If you are reusing images or text clear attribution should be provided as in the example above. Same applies in case of reusing text or other type of content. Be careful to follow the attribution rules as provided by the image source (in the example above it is Pixabay).
+- Describe well and prepare to open ​the environment, the underlying conditions of the experiment the tools (hardware, software, languages) used for processing, for calculation ​
+- Describe the trace and version its progress in the data management plan/software of the project ​tools: Opidor, Data Stewardship, ARGOS (MA) ​
+- Describe all research products to electronic laboratory notebooks (ElabFTW, LabGuru) with time stamping or TMS (time management system)​
+- Facilitate the reuse of "digital objects" by depositing your data and codes in environments (repositories) indexed (PID), accessible, open, saved... ​
+- Work in an open environment, shared with collaborators and saved (task management system, shared spaces,...) ​
+- Link data, code and results to computational documents (Jupyter, Rstudio NoteBook) ​
+- Index objects: by a controlled vocabulary (list, taxonomy, thesaurus, ontology) to classify, reason ​
+- Publish in open journals: its results, data papers,​
+​
+And despite this, the reproducibility of the execution environment is not obvious.​
 
-### Accessibility
+## Reproducibility at the institutional level
+This recently published report and related self-assessment worksheet, below, assists research institutions in understanding how reproducibility can be scaled up internally and supports scaling up of practices to the majority of the research community. It furthermore helps to create an understanding of what types of practices are helpful.
 
-Using headings and subheadings, lists and alternative text for images is extremely important so as to ensure accessibility of the content for people with impairments. Also, take care to choose the appropriate color pallette for images.
+Worth noting, that this report is focused on how well organised an organisation is at scaling up reproducibility practices (i.e., access and coordination). It is not about the maturity of reproducibility practices and how well they adhere to what is commonly understood to be best practice in reproducibility.
 
-### Tables
+- Barker, M., & ChueHong, N. (2024). Framework for scaling up reproducibility practices in research organisations. Zenodo. 
+- Barker, M., & ChueHong, N. (2024). Assessment worksheet. Zenodo.
 
-Tables are a bit tricky in md, the easiest way to create them is to use a tool that will generate the md code that you can then just copy paste in your content file.
-One such tool that can be used is the [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) available online. The provided example table has been generated using this tool. 
-
-| **Column 1 title** | **Column 2 title**  |
-|--------------------|---------------------|
-| content 1          |      content 4      |
-| content 2          |      content 5      |
-| content 3          | content 6 content 7 |
-
-### Related Learning Materials
-
-Refer to exercises, quizzes, games or other types of learning materials where ever they should be included in the unit and provide links to this content.
-
+## How can we move forward?
+**Build communities** – elevating trust requires shared risk and reward : Use  of narrow metrics, e.g., pub count, impact factor, leads to poor  results – need a community to improve practices - Risky for single team  to invest heavily​
+**Collaborate with stakeholders** (publishers and funders) to raise expectations  : transparent results, common terminology, elevated expectation, high quality software​
+**Invest in software ecosystems** – easier to improve quality & share investments:  high quality ecosystems, investement in software skills, new software tools and methodologies​
+**Transform software research into science** – and capture science fundings: scientific software needs a research focus  - improve scientific software using science​
 
 ## Summary
+1. Reproducibility has to be thought of as a long-term goal, where concepts and terminologies are to be discussed among different communities to make sure that there is a coherent terminologyin place thatall communities can understand. According to the literature review and interviews done, these types of engagement are more and more starting to occur
 
-At the end provide a short summary of the main points of the learning unit (these are the key takeaways that help reflect on the learning outcomes)
+2. There is a need for a bottom-up approach to shape policies that support reproducible research practices. This due to the fact that there are naturally huge differences between the different communities in terms of e.g. standards and methods used. This image shows exactly at which stages this policy development work is to take place in order to be correctly understood and supported by key stakeholders, such as research performing organisations, funders, publishers and service providers. Currently, very very few (NWO only exception) do not support nor require reproducibility, and publishers are afraid to include reproducibility requirements as they fear it might affect the submission rates in a negative manner. But we can see some progress here as well, where some publishers are adding some reproducibility requirements.
+
+3. There is a need to bake in the reproducibility aspects into the everyday research process and for it to thus become the norm – the way things are done within science. But these efforts are currently seen as time-consuming and efforts that adds on top of the ordinary research practices, so incentives are needed. Here the dis-incentives are mentioned, which are well-known challenges – the H-index and Impact Factors and the time preassures put on researchers.
+
+4. It is, however, not easy to change things in this respect, as being reproducibility compliant requires good data management practices. These skills are preferrably to be developed early on in the research career, which also helps in taking reproducible aspect into account during all stages of the research life cycle. Here is where especially the FAIR principles comes into play.
+
+5. There are lots of tools and infrastructures available to support good research data management practices and researchers are aware of these, but that is not really the problem in the end. The problem is that the interoperability between systems is not at an advanced stage just yet and thus hinders reproducible research workflows.
+
+## Key Takeaways
+
+- Lack of reproducibility has a negative impact on public trust in the conclusions of science!
+- Data reproducibility is key to Open Science, but FAIR principles alone don't guarantee it
+- Proper management of data and code, combined with well-documented computational environments, is essential for ensuring the reproducibility of research results
+- Data reproducibility practices must be supported by institutional policies that establish a strong regulatory framework to enforce and maintain them over time
+
+### Learning Activity
+This unit has a learning activity about scientific misconduct and is described here: [Activities](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/tree/main/resources/Learning%20Unit/Activities)
+
+To understand why research integrity matters, this activity examines what happens when such integrity is absent – research misconduct.
+
 
 ## Suggested Reading
+- If you want to know more about reproducible research practices, you can look at more cases studies on http://www.practicereproducibleresearch.org/ 
 
-- provide a list of references for further reading that should help clarify the content of the learning unit and elevate the knowledge level
-- [Markdown guide](https://www.markdownguide.org/), free and open-source reference guide that explains how to use Markdown.
+- If you want to know more about reproducibility of scientific results in Europe : 
+[Reproducibility of scientific results in the EU](https://op.europa.eu/en/publication-detail/-/publication/6bc538ad-344f-11eb-b27b-01aa75ed71a1)
+[Assessing the reproducibility of research results in EU Framework Programmes for Research](https://op.europa.eu/en/publication-detail/-/publication/36fa41a8-dbd5-11ec-a534-01aa75ed71a1/language-en)                                               
+
 
