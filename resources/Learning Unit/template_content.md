@@ -6,8 +6,11 @@ tags:
     - FAIR Learning Objects
     - FAIR Learning Unit Template
 ---
-## Introduction
+# Introduction
 In this document, you will find a short description of the three units that make up the learning path.
+
+## Target Audience
+- Data Librarians and other data curious
 
 # Learning Unit 1: Reproducibility and Replicability in Scientific Research
 
@@ -15,27 +18,19 @@ This unit focuses on reproducibility and replicability in scientific research. I
 In this unit we discuss what reproducibility is, the barriers there are to reproducibility and the benefits of reproducibility.
 
 ## Learning Objectives
-
 After completing this unit, you will be able to:
-- Define reproducibility and replicability in scientific research
-- Explain how reproducibility and replicability are related but also different
-- Describe benefits of reproducibiliy to researchers
-- Describe common barriers to reproducibility
-
-## Target Audience
-
-- Data Librarians and other data curious
+·	Define reproducibility and replicability in scientific research
+·	Explain how reproducibility and replicability are related but also different
+·	Describe benefits of reproducibiliy to researchers
+·	Describe common barriers to reproducibility
 
 ## Duration
-
 - 60 mins
 
 ## Prerequisites
-
 - None
 
 ## Learning Tools
-
 - None
 - The content is designed to be taught online, therefore a virtual teaching platform with breakout rooms is used to facilitate the content and activities.
 
@@ -67,11 +62,9 @@ The content of the unit is described in more detail in this document where each 
 
 
 ### Related Learning Materials
-
 Follow the link to find activities. Activities 1 and 2 are used in this unit. [Activities](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/tree/main/resources/Learning%20Unit/Activities)
 
 ## Summary
-
 Reproducibility means getting the same results with the same data, while replicability means getting the same results with new data. 
 Reproducibility is the first step toward replicability, and replicating results is how we build scientific knowledge.
 Reproducibility benefits researchers directly, not just the broader scientific community. It takes time and effort, but that investment pays off in the long run!
@@ -84,37 +77,34 @@ Reproducibility benefits researchers directly, not just the broader scientific c
 - The Turing Way Community. (2022). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.2). Zenodo. https://doi.org/10.5281/zenodo.7625728
 - Why is Reproducibility so Important to Scientists: Guide for 2022. https://genemod.net/blog/why-is-reproducibility-so-important-to-scientists
 
+# Learning Unit 2: Reproducibility Crisis and Remedies
 
 ## Learning Objectives
 
-- min one learning objective using the verbs from the Blooms taxonomy
+·	Explain what reproducible research looks like in practice
+·	Explain the barriers to reproducibility and how to overcome them
 
-## Target Audience
-
-- who is this learning unit meant for
 
 ## Duration
 
-- time needed to learn the provided content
+- 60 mins
 
 ## Prerequisites
-
-- list any knowledge that is required so that the learning unit can be followed
+- Please read the two cases (Activity 3 and 3a), which can be downloaded here: [Activities](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/tree/main/resources/Learning%20Unit/Activities)
 
 ## Learning Tools
-
-- list any tools that are necessary to be used to complete the learning unit
-- examples include required software, access to resources, etc.
+- None
 
 ## Learning Content Topic
+This unit introduces the Reproducibility Crisis, what it is and actions that can be taken to implement reproducible workflows to counter this crisis.
 
-Here goes the content of the learning unit divided into a number of subtopics and any additional headings as necessary.
-
-Use blank rows to divide between paragraphs.
-
-References to external or internal content provided elsewhere should be linked with [hyperlinks](https://pages.github.com/).
-
-### Sub-subtitle
+### What is the Reproducibility Crisis?
+Nature did a rather extensive survey a few years ago on reproducibility. It showed that 90 % of the survey participants – the researchers - thinks that a reproducibility crisis is a fact - either slightly or significantly (1,576 scientist in sample).
+- More than 70 % of researchers have failed to reproduce another scientist’s experiments. More than half have failed to reproduce their own experiments. Publishing replicated positive studies did not feel very motivating (24 %) and journals are reluctant towards publishing negative replication results (13 %)
+- More than 60 % experienced failure in reproducibility due to pressure to publish and selective reporting. Adding to the difficulties to comply to reproducibility practices were also competition for grants and growing amount of bureaucracy demands
+- Almost 90 % felt that a more robust experimental design and improved statistics and mentorship could help to solve the reproducibility crisis. Also enhanced practices and journal checklists were ranked high
+- 80 % thinks that research funders and publishers should do much more to address this issue
+One analysis estimates that 85% of biomedical research efforts are wasted
 
 Refer to a different learning unit using a relative link. For an example, see the [Syllabus](../index.md) file.
 
