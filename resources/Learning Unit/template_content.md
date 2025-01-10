@@ -41,7 +41,7 @@ After completing this unit, you will be able to:
 
 ## Learning Content Topic
 
-The content of the unit is described in this document: [Unit1_InstructorNotes](https://github.com/Task-4-2/Technical-Skills-as-a-bridge-to-reproducible-research/tree/main/resources/Learning%20Unit/attachments/Learning-Unit-1)
+The content of the unit is described in this document: [Unit1_InstructorNotes](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/blob/59f6fd436090a06e6f0225714777763dece2fb29/resources/Learning%20Unit/attachments/Unit%201%20instructor%20notes%20DRAFT.docx)
 
 
 ### Related Learning Materials
