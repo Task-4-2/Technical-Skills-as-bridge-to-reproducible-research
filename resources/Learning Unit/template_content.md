@@ -20,10 +20,10 @@ In this unit we discuss what reproducibility is, the barriers there are to repro
 ## Learning Objectives
 After completing this unit, you will be able to:
 
-·	Define reproducibility and replicability in scientific research
-·	Explain how reproducibility and replicability are related but also different
-·	Describe benefits of reproducibiliy to researchers
-·	Describe common barriers to reproducibility
+* Define reproducibility and replicability in scientific research
+* Explain how reproducibility and replicability are related but also different
+* Describe benefits of reproducibiliy to researchers
+* Describe common barriers to reproducibility
 
 ## Duration
 - 60 mins
