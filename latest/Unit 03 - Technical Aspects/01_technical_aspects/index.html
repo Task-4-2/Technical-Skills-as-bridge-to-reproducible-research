@@ -1,0 +1,1225 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+  
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Skills4EOSC T4.2">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-8.5.7">
+    
+  
+    <meta name="title" content="Learning Unit 3: Technical Aspects"/>
+  
+  
+    <meta name="tags" content="['FAIR-by-Design Learning Materials', 'FAIR Learning Objects', 'Git', 'Jupyter Notebooks', 'Reproducibility', 'Data Backups', 'File Naming Conventions']"/>
+  
+
+    
+      
+        <title>Learning Unit 3: Technical Aspects - Technical skills are the bridge to reproducible research</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="custom" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#learning-unit-3-technical-aspects" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Technical skills are the bridge to reproducible research" class="md-header__button md-logo" aria-label="Technical skills are the bridge to reproducible research" data-md-component="logo">
+      
+  <img src="../../attachments/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Technical skills are the bridge to reproducible research
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Learning Unit 3: Technical Aspects
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Technical skills are the bridge to reproducible research" class="md-nav__button md-logo" aria-label="Technical skills are the bridge to reproducible research" data-md-component="logo">
+      
+  <img src="../../attachments/logo-white.png" alt="logo">
+
+    </a>
+    Technical skills are the bridge to reproducible research
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Technical Skills as the Bridge to Reproducible Research.
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Unit 01 – Reproducibility and Replicability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unit 01 – Reproducibility and Replicability" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Unit 01 – Reproducibility and Replicability
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unit%2001%20%E2%80%93%20Reproducibility%20and%20Replicability/01_reproducibility_replicability/" class="md-nav__link">
+        Learning Unit 1: Reproducibility and Replicability in Scientific Research
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Unit 02 – Reproducibility Crisis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unit 02 – Reproducibility Crisis" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Unit 02 – Reproducibility Crisis
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unit%2002%20%E2%80%93%20Reproducibility%20Crisis/01_reproducibility_crisis/" class="md-nav__link">
+        Learning Unit 2: Reproducibility Crisis and Remedies
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Unit 03   Technical Aspects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unit 03   Technical Aspects" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Unit 03   Technical Aspects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Learning Unit 3: Technical Aspects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Learning Unit 3: Technical Aspects
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    Learning Objectives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#target-audience" class="md-nav__link">
+    Target Audience
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    Duration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-tools" class="md-nav__link">
+    Learning Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-theory-to-practice" class="md-nav__link">
+    From Theory to Practice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filenaming-recommendations" class="md-nav__link">
+    Filenaming recommendations
+  </a>
+  
+    <nav class="md-nav" aria-label="Filenaming recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-applying-filenaming-conventions" class="md-nav__link">
+    Tips for applying filenaming conventions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-advanced-file-versioning-with-git" class="md-nav__link">
+    More advanced file versioning with Git
+  </a>
+  
+    <nav class="md-nav" aria-label="More advanced file versioning with Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-features-and-terminology" class="md-nav__link">
+    Git features and terminology
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-feature-spotlight" class="md-nav__link">
+    Git feature spotlight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-and-readme-files" class="md-nav__link">
+    Git and README files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-ways-to-use-git" class="md-nav__link">
+    More ways to use Git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracking-the-lifecycle-of-a-file-with-git" class="md-nav__link">
+    Tracking the lifecycle of a file with Git
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ensuring-data-longevity" class="md-nav__link">
+    Ensuring data longevity
+  </a>
+  
+    <nav class="md-nav" aria-label="Ensuring data longevity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github-and-backup-aspects" class="md-nav__link">
+    Github and Backup Aspects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-points-about-backup-aspects" class="md-nav__link">
+    Final Points About Backup Aspects
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-for-collaboration-and-reproducibility" class="md-nav__link">
+    Tools for collaboration and reproducibility
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools for collaboration and reproducibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electronic-lab-notebooks" class="md-nav__link">
+    Electronic Lab Notebooks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-a-jupyter-environment" class="md-nav__link">
+    Setting up a Jupyter Environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jupyter-and-git" class="md-nav__link">
+    Jupyter and Git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dos-and-donts-with-jupyter-notebooks" class="md-nav__link">
+    Do's and Don't's with Jupyter Notebooks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zenodo-and-github-integration" class="md-nav__link">
+    Zenodo and Github integration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    Key Takeaways
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-activity" class="md-nav__link">
+    Learning Activity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suggested-reading" class="md-nav__link">
+    Suggested Reading
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    Learning Objectives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#target-audience" class="md-nav__link">
+    Target Audience
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    Duration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-tools" class="md-nav__link">
+    Learning Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-theory-to-practice" class="md-nav__link">
+    From Theory to Practice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filenaming-recommendations" class="md-nav__link">
+    Filenaming recommendations
+  </a>
+  
+    <nav class="md-nav" aria-label="Filenaming recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-applying-filenaming-conventions" class="md-nav__link">
+    Tips for applying filenaming conventions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-advanced-file-versioning-with-git" class="md-nav__link">
+    More advanced file versioning with Git
+  </a>
+  
+    <nav class="md-nav" aria-label="More advanced file versioning with Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-features-and-terminology" class="md-nav__link">
+    Git features and terminology
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-feature-spotlight" class="md-nav__link">
+    Git feature spotlight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-and-readme-files" class="md-nav__link">
+    Git and README files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-ways-to-use-git" class="md-nav__link">
+    More ways to use Git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracking-the-lifecycle-of-a-file-with-git" class="md-nav__link">
+    Tracking the lifecycle of a file with Git
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ensuring-data-longevity" class="md-nav__link">
+    Ensuring data longevity
+  </a>
+  
+    <nav class="md-nav" aria-label="Ensuring data longevity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github-and-backup-aspects" class="md-nav__link">
+    Github and Backup Aspects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-points-about-backup-aspects" class="md-nav__link">
+    Final Points About Backup Aspects
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-for-collaboration-and-reproducibility" class="md-nav__link">
+    Tools for collaboration and reproducibility
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools for collaboration and reproducibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electronic-lab-notebooks" class="md-nav__link">
+    Electronic Lab Notebooks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-a-jupyter-environment" class="md-nav__link">
+    Setting up a Jupyter Environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jupyter-and-git" class="md-nav__link">
+    Jupyter and Git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dos-and-donts-with-jupyter-notebooks" class="md-nav__link">
+    Do's and Don't's with Jupyter Notebooks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zenodo-and-github-integration" class="md-nav__link">
+    Zenodo and Github integration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    Key Takeaways
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-activity" class="md-nav__link">
+    Learning Activity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suggested-reading" class="md-nav__link">
+    Suggested Reading
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+  <nav class="md-tags" >
+    
+      
+      
+        <span class="md-tag">FAIR-by-Design Learning Materials</span>
+      
+    
+      
+      
+        <span class="md-tag">FAIR Learning Objects</span>
+      
+    
+      
+      
+        <span class="md-tag">Git</span>
+      
+    
+      
+      
+        <span class="md-tag">Jupyter Notebooks</span>
+      
+    
+      
+      
+        <span class="md-tag">Reproducibility</span>
+      
+    
+      
+      
+        <span class="md-tag">Data Backups</span>
+      
+    
+      
+      
+        <span class="md-tag">File Naming Conventions</span>
+      
+    
+  </nav>
+
+
+
+
+<h1 id="learning-unit-3-technical-aspects">Learning Unit 3: Technical Aspects</h1>
+<p>The goal of this unit is to showcase concrete ways on how to put into practice the various topics and recommendations regarding reproducible research discussed during the previous training session.</p>
+<p>The unit covers 4 main aspects, starting with providing a bridge between theoretical aspects discussed so far and technical aspects which are the main focus of this presentation. Then, the outline the common challenges that arise when it comes to research data management and how data longevity can be ensured across wide timespans. Finally, a discussion on collaboration tools that can also aid the reproducibility aspects of the research, introducing Jupyter notebooks as the means to do so.</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>After completing this unit, you will be able to:</p>
+<ul>
+<li>Describe the challenges related to data management</li>
+<li>Use Git as a file versioning tool</li>
+<li>Explain different data back-up methodologies and select the optimal one</li>
+<li>Discover the concept of virtual notebooks and their relation to reproducibility</li>
+</ul>
+<h2 id="target-audience">Target Audience</h2>
+<ul>
+<li>Data Librarians and other data curious</li>
+</ul>
+<h2 id="duration">Duration</h2>
+<ul>
+<li>120 mins</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The technical aspects is an introductory unit in which the concepts of file naming schemes, file versioning, Git, and lab notebooks are introduced. As the unit is targeted at the beginner level, no explicit preparation is needed before attending the session. However, accounts on the following platforms will be useful for conducting the exercises:</p>
+<p>GitHub. Details about account creation are available on the <a href="https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github">GitHub docs page</a></p>
+<p>Google Colab (if you plan to use Google Colab instead of Binder for testing out the lab notebooks). A free Google account is enough for accessing the Colab service. More information is also available on the <a href="https://colab.google/">official page</a>.</p>
+<p>No additional software apart from a web browser is required for taking part in the training or for conducting the exercises.</p>
+<h2 id="learning-tools">Learning Tools</h2>
+<ul>
+<li>See <a href="#prerequisites">Prerequisites</a></li>
+<li>The content is designed to be taught online, therefore a virtual teaching platform with breakout rooms is used to facilitate the content and activities.</li>
+</ul>
+<h2 id="from-theory-to-practice">From Theory to Practice</h2>
+<p>Data management plans can be abstract in nature and there is a need to discuss ways of how different aspects can be implemented in practice. This section focuses on topics such as:</p>
+<ul>
+<li>Securely storing research data</li>
+<li>Describing the stored data so that others can easily make sense of it and reuse it</li>
+<li>Optimizing the storage and presentation of the data to facilitate collaboration</li>
+<li>Ways in which research data can be made persistently available, ensuring its longevity</li>
+</ul>
+<p>A common problem which everyone has experienced is having to deal with multiple versions of the same file, named seemingly in an arbitrary fashion. When multiple versions of the same file are available, clear indication to which one is the most recent and up-to-date one is needed. Furthermore, if unsuitable naming convention adopted, there is also no clear indication on how these versions differ between each other and what changes have been introduced when. Some potential options that can be used for organizing research files are:</p>
+<ul>
+<li>Using search tools (should be avoided, discussed in more details on the next slide)</li>
+<li>Defining a consistent and descriptive file naming strategy and applying it to individual files</li>
+<li>Using more advanced file versioning tools which can also act as collaboration enablers, discussed in more details later in the presentation</li>
+</ul>
+<p>Using advanced searching tools to find a given file, without adopting a more systematic approach is usually just a “local” solution, that will work on a given workstation. Different operating systems have different features when it comes to file searching, and what works on a given machine might not work on others. Additionally, this limits the platforms where the files can be hosted, since different online services have vastly different text searching capabilities. As a result, this option should be avoided if possible. It should be stressed that in this unit we do not make any recommendations on “how” the naming scheme should be structured, just that it should be well defined and consistently applied across all files. The adopted naming scheme should be as descriptive as possible, incorporating elements that are useful for the given type of files, such as the creation date, a brief description, incremental version number, etc... The ordering in which elements are added to the naming scheme is also very important, since it has an impact on the lexicographical sorting of the files</p>
+<h2 id="filenaming-recommendations">Filenaming recommendations</h2>
+<p>No golden rule. Different conventions for different file groups are possible.</p>
+<p>Think about what is important:</p>
+<ul>
+<li>The date</li>
+<li>The format</li>
+<li>Description</li>
+<li>Version</li>
+</ul>
+<p><em>Keep in mind that operating systems sort files in a lexicographical order. Put important information first.</em></p>
+<ul>
+<li>Include metadata, use abbreviations</li>
+<li>Decide what information to include in the file name</li>
+<li>Different environments have different file name length limits </li>
+<li>Keep full directory length less than 255 characters to avoid problems</li>
+<li>Use <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> for data formats (YYYYMMDD). Lexicographical sorting will sort the files correctly based on date in this case.</li>
+<li>Use fixed length numbers: <code>001</code>, <code>017</code>, <code>153</code> instead of <code>1</code>, <code>17</code>, <code>153</code></li>
+</ul>
+<p>A common pitfall with lexicographical sorting is the sorting of numbers. To avoid this, fixed length numbers should be used, along with <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> notation for any dates in the file name. Another point to make is that even though modern devices might support long file names, for backwards compatibility it is better to limit file paths to no more than 255 characters.</p>
+<ul>
+<li>Include file extensions in the name. Some operating systems do not require an extension, but it is a good practice (e.g., <code>image1.jpg</code>, <code>image2.png</code>, <code>README.md</code>)</li>
+<li>Avoid special characters and spaces in file names</li>
+<li>Different operating systems have different policies regarding special characters (<code>:</code>, <code>/</code>, <code>\</code>, <code>?</code>, <code>|</code>, <code>&lt;</code>, <code>&gt;</code> are all problematic)</li>
+<li>Spaces make it difficult to type the name on the command line. Use <code>_</code>, <code>-</code>, or character casing to separate metadata: <code>my_file.txt</code>; <code>my-file.txt</code>; <code>MyFile.txt</code></li>
+<li>Do not use the same name with changed casing: <code>image1.png</code> and <code>Image1.png</code></li>
+</ul>
+<p>Proper filenaming examples: </p>
+<ul>
+<li><code>[investigator]_[method]_[subject]_[YYYYMMDD]_[version].[ext]</code></li>
+<li><code>[project #]_[method]_[version]_[YYYYMMDD].[ext]</code></li>
+<li><code>[YYYYMMDD]_[version]_[subject]_[datacollector].[ext]</code></li>
+<li><code>[type of file]_[author]_[date].[ext]</code></li>
+</ul>
+<h3 id="tips-for-applying-filenaming-conventions">Tips for applying filenaming conventions</h3>
+<p>Dealing with an existing set of files which have not adopted a consistent naming scheme previously can be tedious and error prone, should the renaming process be manually conducted. An alternative is to use automated bulk renaming tools:</p>
+<ul>
+<li>
+<p>Microsoft Windows</p>
+<ul>
+<li><a href="https://www.bulkrenameutility.co.uk/">BulkRenameUtility</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows/powertoys/powerrename">PowerToys PowerRename</a></li>
+</ul>
+</li>
+<li>
+<p>MacOS</p>
+<ul>
+<li>built-in bulk renaming</li>
+<li><a href="https://www.transnomino.com/">Transomino</a></li>
+</ul>
+</li>
+<li>
+<p>GNU/Linux</p>
+<ul>
+<li><a href="https://man7.org/linux/man-pages/man1/rename.1.html">rename</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="more-advanced-file-versioning-with-git">More advanced file versioning with Git</h2>
+<p><a href="https://git-scm.com/">Git</a> is the most popular file versioning tool today, available as open-source software for all popular computing platforms. Main benefit of adopting Git is the fact that it can efficiently track the complete history of a given file, allow reverting to previous file versions and deal with (conflicting) changes made by multiple users.</p>
+<h3 id="git-features-and-terminology">Git features and terminology</h3>
+<ul>
+<li><strong>Repository</strong> – analogy to a folder with enabled file versioning features.</li>
+<li><strong>*Clone</strong> – local copy of a remote repository with its full version history and file contents.</li>
+<li><strong>Commit</strong> – a record of changes to a file or a set of files. Described by a commit message.</li>
+<li><strong>Push</strong> – upload of local commit(s) to a remote repository (online).</li>
+<li><strong>Pull</strong> – download of remote commit(s) to a local repository.</li>
+<li><strong>Fork</strong> – a 1:1 copy of an existing repository. Forks share the same history as the parent but diverge by adding unique changes.</li>
+</ul>
+<p>Care should be taken to clearly describe the difference between the clone and pull actions to users that have not used Git before. Cloning is done once at the repository level, downloading all files within it, along with the complete history for each file. In a nutshell, cloning allows a remote repository to be downloaded locally.</p>
+<p>Pulling revers to downloading remote changes that have been uploaded to the online hosted Git repository in the meantime, thus reconciling the remote changes with the local changes. To pull remote changes to a given repository, the repository must already be available locally, meaning that the clone action has been executed previously. </p>
+<p>In most cases, the most popular free Git hosting services will be sufficient for most research groups. Depending on the subject area, there might be specialized Git hosting services available as well. Users should also check if their institution already offers a hosted Git service.</p>
+<h3 id="git-feature-spotlight">Git feature spotlight</h3>
+<p>Repository visibility options are:</p>
+<ul>
+<li><strong>Private</strong> – only designated people have access and not visible to search engines</li>
+<li><strong>Public</strong> – anyone can view the repository, indexed by search engines</li>
+</ul>
+<p>Branches are a very useful tool when collaborating with others. Each new set of changes can be developed on a separate branch, until ready to be made part of the original content, by merging that branch to the primary branch. 
+Potentially disruptive changes to the files can also be made on separate branches and if they are successful, merged into the main branch. If unsuccessful, the branch can simply be discarded, without any effect to the main branch’s content. </p>
+<ul>
+<li><strong>Git blame</strong> – check by whom a given change was made and when</li>
+<li><strong>Git branch</strong> – parallel version of a single repository. Changes to it do not affect the “primary branch” or live version. Parallel branches can eventually be merged to the primary branch if desired. Branches allow multiple people to work in parallel, without disturbing each other. Once the work on the subbranch has been finished (new experiment, new chapter...), it can be merged to the main branch. Should merge conflicts arise (conflicting changes have been introduced), they can be manually reconciled.</li>
+</ul>
+<h3 id="git-and-readme-files">Git and README files</h3>
+<p>Good practice is to add a <code>README.md</code> file in each directory. The <code>README.md</code> file in the top of the repository serves as a general description including description of subdirectory contents and file naming schemes and is shown prominently on the web.</p>
+<h3 id="more-ways-to-use-git">More ways to use Git</h3>
+<p>Git itself is free and open-source software and there are multiple ways to interact with Git repositories:</p>
+<ul>
+<li>Official command line application – <a href="https://git-scm.com/downloads">git</a></li>
+<li>Dedicated desktop applications<ul>
+<li><a href="https://desktop.github.com/download/">GitHub Desktop</a></li>
+<li><a href="https://www.sourcetreeapp.com/">Sourcetree (BitBucket)</a></li>
+<li><a href="https://www.sublimemerge.com/">Sublime Merge</a></li>
+</ul>
+</li>
+</ul>
+<p>Find a <a href="https://fair-by-design-methodology.github.io/FAIR-by-Design_ToT/latest/Stage%204%20%E2%80%93%20Produce/08-Development%20Tools/08-Introduction%20to%20Markdown%20and%20Git/#version-management">step-by-step guide</a> on getting started with a desktop client as part of the FAIR-by-Design ToT Development Tools learning unit.</p>
+<h3 id="tracking-the-lifecycle-of-a-file-with-git">Tracking the lifecycle of a file with Git</h3>
+<p>Git does not track only the file contents. It also helps with adding, removing, and renaming files. Part of the summary information about the changes introduced in the commit. An important point to make is that Git does not only version the content of the files, but also their location and name. This makes it easy to track the complete lifecycle of a given file not only as its content is changed, but also as it is moved between subdirectories and/or renamed. This is especially important for long living repositories, where the file naming schemes might have evolved over time. Note also that this versioning of the file names also provides an additional safety net when using bulk rename utilities. Undoing a botched bulk rename is just a matter of reverting the corresponding commit where the changes have been introduced.</p>
+<h2 id="ensuring-data-longevity">Ensuring data longevity</h2>
+<p>Data is the basis of research. Data recovery upon loss might be expensive, slow, or even impossible. Therefore, reliable backups are an important part of data management. When keeping a single copy of data, it is not a matter of if the data will be lost, but when it will be lost, as it is just a matter of time. To prevent this, a robust backup strategy should be implemented. This provides mitigation against:</p>
+<ul>
+<li>Hardware failure</li>
+<li>Software failure</li>
+<li>Silent corruption</li>
+<li>Human errors</li>
+<li>Device theft/loss</li>
+</ul>
+<p>The recommended approach is not to store a single copy of your data, instead store multiple! The recommended approach is to store locally, on an external medium, and in the cloud (three copies). This is also known as the 3-2-1 backup method: 3 copies of data (1 production and 2 backups); 2 different media; 1 copy off-site.</p>
+<h3 id="github-and-backup-aspects">Github and Backup Aspects</h3>
+<p><strong>Question:</strong> If I use an online Git service to host my repositories, do I have to implement any additional backup solutions?</p>
+<p><strong><em>Answer: Yes</em></strong></p>
+<p>It is good practice to apply the same backup strategy as used for the rest of your files. For additional safety repository mirrors can be set up, where the repository content is mirrored across different Git hosts (e.g., GitHub and GitLab). Using a single online hosting Git service is not backup, since the account can be disabled, the service can go out of business or can suffer unrecoverable data corruption/loss.</p>
+<h3 id="final-points-about-backup-aspects">Final Points About Backup Aspects</h3>
+<p>Careful consideration when choosing a cloud storage service:</p>
+<ul>
+<li>Security aspects</li>
+<li>Privacy policy (Privacy aspects should be taken into careful consideration when choosing online storage services. It is advised to carefully read both the privacy and terms of use policies).</li>
+<li>Data mining</li>
+<li>Data ownership</li>
+<li>Terms of use</li>
+<li>Guaranteed service &amp; data availability</li>
+</ul>
+<h2 id="tools-for-collaboration-and-reproducibility">Tools for collaboration and reproducibility</h2>
+<p>If I meticulously manage my data and describe it in detail while publishing it in a Git repository, isn’t that enough? The answer is <strong><em>NO</em></strong>.</p>
+<h3 id="electronic-lab-notebooks">Electronic Lab Notebooks</h3>
+<p>Electronic Lab Note books can assist in online and offline searching, output in different formats, sharing your data, embedding different media to make content more interactive and improving accessibility. Depending on the scientific discipline, different tools are used, but Jupyter is among the most popular ones today. It should be stressed that Jupyter is not limited only to the use of the Python programming language and that other programming languages are supported as well through the introduction of different “kernels”.</p>
+<h3 id="setting-up-a-jupyter-environment">Setting up a Jupyter Environment</h3>
+<p>Local installation:</p>
+<pre><code class="language-bash">pip install jupyterlab
+jupyterlab notebook
+</code></pre>
+<p>The local installation instructions assume that the user already has a Python environment setup.</p>
+<p>Hosted Jupyter environments available at many institutions. But there are also free services:</p>
+<ul>
+<li><a href="https://mybinder.org/">Binder</a></li>
+<li><a href="https://colab.research.google.com/">Google Colab</a></li>
+</ul>
+<p>Google Colab is a popular electronic lab notebooks service compatible with Jupyter Notebooks. It provides both a free and a paid option. The paid option includes higher resource limits and the code is executed on more performant hardware. Both Binder and Google Colab support a direct Git integration, where a Git repository can be immediately opened in the respective environment just by providing a link to it.</p>
+<h3 id="jupyter-and-git">Jupyter and Git</h3>
+<p>Jupyter and Git are commonly used in tandem. Git for storing the data, and Jupyter for analyzing and visualizing the data.</p>
+<p>Jupyter can be connected directly to a Git repository. All files are available in the Jupyter environment. It is possible to create permanent links which instantiate a new Jupyter environment from a Git repository upon a click. </p>
+<p>Note, that many Git hosts offer a dedicated read-only view for Jupyter notebooks</p>
+<h3 id="dos-and-donts-with-jupyter-notebooks">Do's and Don't's with Jupyter Notebooks</h3>
+<ul>
+<li>✅ Do serialize or cache the intermediate outputs of long-running steps.</li>
+<li>✅ Do take care to execute the steps serially, one after the other, before publishing the notebook.</li>
+<li>❌ Don’t ever edit your raw data, especially not manually. This includes changing file formats or fixing errors by hand.</li>
+<li>❌ Don’t overwrite your raw data with a newly processed or cleaned version. Notebooks should be as idempotent as possible.</li>
+<li>❌ Don’t save multiple versions of the raw data.'</li>
+</ul>
+<h3 id="zenodo-and-github-integration">Zenodo and Github integration</h3>
+<p>The step-by-step instructions on how to achieve the Git&lt;-&gt;Zenodo integration are out of scope of this presentation and participants are invited to have a look at <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">Referencing and citing content guide from GitHub</a></p>
+<p>The Git repository can be seen as a “living organism” to which changes can be made at any point, whereas Zenodo deposits are point-in-time freezes of the content of the repository, created on the repository owner’s demand.</p>
+<h3 id="key-takeaways">Key Takeaways</h3>
+<p>The challenge of putting data management plans into practice:</p>
+<ul>
+<li>Practicing good data hygiene</li>
+<li>Hierarchical file structure</li>
+<li>File naming conventions</li>
+<li>The importance of data backups</li>
+</ul>
+<p>File versioning:</p>
+<ul>
+<li>Collaboration enabler</li>
+<li>Integration with third-party (research) infrastructures (e.g., Zenodo)</li>
+</ul>
+<p>Improving reproducibility by providing a snapshot of the compute environment:</p>
+<ul>
+<li>Electronic lab notebooks</li>
+<li>Integration with file versioning</li>
+<li>Free vs. paid hosting options</li>
+</ul>
+<h3 id="learning-activity">Learning Activity</h3>
+<p>This unit has two learning activities.</p>
+<ul>
+<li>
+<p><a href="./Activities/04-Git%20Blame%20in%20Action.md">Activity 1</a> - The learner practices using the Git blame feature. The activity uses the <a href="https://github.com/Task-4-2/librarian-git-exercise">Task-4-2/librarian-git-exercise</a> repository as a demo repository.</p>
+</li>
+<li>
+<p><a href="./Activities/05-First%20Steps%20with%20Jupyter%20Notebooks.md">Activity 2</a> - 
+The learner practices using Jupyter Notebooks. The activity uses the <a href="https://github.com/Task-4-2/librarian-jupyter-notebook-example">Task-4-2/librarian-jupyter-notebook-example</a> repository as a demo repository.</p>
+</li>
+</ul>
+<p>This activity can be conducted on any online Jupyter service that offers the possibility to clone a remote public Git repository. The links towards Binder and Google Colab are direct links, meaning that they will open a new browser window with the corresponding Git repository already cloned and a Jupyter notebook ready to be used. In case one of the links does not work, the other can freely be used as an alternative.</p>
+<h2 id="suggested-reading">Suggested Reading</h2>
+<ul>
+<li>Learn more about Jupyter notebooks by following the <a href="https://book.the-turing-way.org/communication/binder/zero-to-binder.html">Zero-to-Binder guides</a>.</li>
+<li>Learn more about Git branching and how it works using the interactive <a href="https://learngitbranching.js.org/">"Learn Git Branching" tool</a>.</li>
+<li>Markdown is a useful tool to format text-based cells when using Jupyter notebooks. Learn more about Markdown by following the <a href="https://fair-by-design-methodology.github.io/FAIR-by-Design_ToT/latest/Stage%204%20%E2%80%93%20Produce/09-Content%20Development/09-Markdown%20Syntax/">FAIR-by-Design Markdown guide</a></li>
+<li>Be wary of common pitfalls when using Jupyter notebooks by reading the <a href="https://ml-science-book.com/reproducibility.html">"Reproducibility"</a> section of the Supervised Machine Learning for Science Git Book. The part about ordering of executed cells is especially important.</li>
+<li>Use <a href="https://github.com/cookiecutter/cookiecutter">Cookiecutter</a> based templates such as the one for <a href="https://cookiecutter-data-science.drivendata.org/">data science by DrivenData</a> for easy initialization of new coding environments.</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <nav class="md-footer__inner md-grid" aria-label="" >
+    
+    
+    <a href="../../Unit%2002%20%E2%80%93%20Reproducibility%20Crisis/01_reproducibility_crisis/" class="md-footer__link md-footer__link--prev"
+      aria-label="Previous: Learning Unit 2: Reproducibility Crisis and Remedies" rel="prev">
+      <div class="md-footer__button md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </div>
+      <div class="md-footer__title">
+        <span class="md-footer__direction">
+          Previous
+        </span>
+        <div class="md-ellipsis">
+          Learning Unit 2: Reproducibility Crisis and Remedies
+        </div>
+      </div>
+    </a>
+    
+    
+  </nav>
+  
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+      <div style="display: flex; justify-content: space-between; align-items: center">
+      
+        <div class="md-copyright"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img
+              alt="Creative Commons License" style="border-width:0" src="https://raw.githubusercontent.com/FAIR-by-Design-Methodology/FAIR-by-Design_ToT/a9f9eb58f58a4c39a32609c160ca52922c41fc2a/resources/attachments/cc-by.png" /></a> Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+            Attribution 4.0 International License</a>.
+        </div>
+      
+      </div>
+
+    </div>
+    <div class="logos-container" style="display: block; text-align: center;">
+      <img alt="Skills4EOSC Logo" style="max-height:30px" src="https://raw.githubusercontent.com/FAIR-by-Design-Methodology/FAIR-by-Design_ToT/main/resources/attachments/logo-white.png" />
+      <img alt="EOSC Logo" style="height: 30px;" src="https://raw.githubusercontent.com/FAIR-by-Design-Methodology/FAIR-by-Design_ToT/main/resources/attachments/eosc-logo.png">
+      <img alt="Co-funded by the European Union Logo" style="height: 30px;" src="https://raw.githubusercontent.com/FAIR-by-Design-Methodology/FAIR-by-Design_ToT/main/resources/attachments/eu-logo.png" />
+      <img alt="UK Research and Innovation Logo" style="height: 30px;" src="https://raw.githubusercontent.com/FAIR-by-Design-Methodology/FAIR-by-Design_ToT/main/resources/attachments/ukri-logo.png" />
+    </div>
+    <div class="md-container">
+
+      <div class="cite-example md-copyright">
+        <div class="md-footer-meta__inner md-grid" style="justify-content: center; align-items: center;">
+          Cite as:
+          
+            
+            
+            
+              Surname, First_Name.
+            
+          
+          (2023-10-17). Training Name (1.0.0). 
+          <a href="https://doi.org/10.5072/zenodo.1234567">&nbsp;https://doi.org/10.5072/zenodo.1234567</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      
+    
+  </body>
+</html>

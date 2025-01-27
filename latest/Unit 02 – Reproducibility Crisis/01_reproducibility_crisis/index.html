@@ -1,0 +1,982 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+  
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Skills4EOSC T4.2">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-8.5.7">
+    
+  
+    <meta name="title" content="Learning Unit 2: Reproducibility Crisis and Remedies"/>
+  
+  
+    <meta name="tags" content="['FAIR-by-Design Learning Materials', 'FAIR Learning Objects', 'Reproducibility crisis']"/>
+  
+
+    
+      
+        <title>Learning Unit 2: Reproducibility Crisis and Remedies - Technical skills are the bridge to reproducible research</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="custom" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#learning-unit-2-reproducibility-crisis-and-remedies" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Technical skills are the bridge to reproducible research" class="md-header__button md-logo" aria-label="Technical skills are the bridge to reproducible research" data-md-component="logo">
+      
+  <img src="../../attachments/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Technical skills are the bridge to reproducible research
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Learning Unit 2: Reproducibility Crisis and Remedies
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Technical skills are the bridge to reproducible research" class="md-nav__button md-logo" aria-label="Technical skills are the bridge to reproducible research" data-md-component="logo">
+      
+  <img src="../../attachments/logo-white.png" alt="logo">
+
+    </a>
+    Technical skills are the bridge to reproducible research
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Technical Skills as the Bridge to Reproducible Research.
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Unit 01 – Reproducibility and Replicability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unit 01 – Reproducibility and Replicability" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Unit 01 – Reproducibility and Replicability
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unit%2001%20%E2%80%93%20Reproducibility%20and%20Replicability/01_reproducibility_replicability/" class="md-nav__link">
+        Learning Unit 1: Reproducibility and Replicability in Scientific Research
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Unit 02 – Reproducibility Crisis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unit 02 – Reproducibility Crisis" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Unit 02 – Reproducibility Crisis
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Learning Unit 2: Reproducibility Crisis and Remedies
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Learning Unit 2: Reproducibility Crisis and Remedies
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    Learning Objectives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#target-audience" class="md-nav__link">
+    Target Audience
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    Duration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-tools" class="md-nav__link">
+    Learning Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reproducibility-crisis-and-remedies" class="md-nav__link">
+    Reproducibility Crisis and Remedies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-reproducibility-crisis" class="md-nav__link">
+    What is the Reproducibility Crisis?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-reproducible-research-lifecycle" class="md-nav__link">
+    A Reproducible Research Lifecycle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-improve-reproducibility" class="md-nav__link">
+    How to improve reproducibility
+  </a>
+  
+    <nav class="md-nav" aria-label="How to improve reproducibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#care-about-data" class="md-nav__link">
+    Care about data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#care-about-code" class="md-nav__link">
+    Care about Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#care-about-environment" class="md-nav__link">
+    Care about Environment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reproducibility-at-the-institutional-level" class="md-nav__link">
+    Reproducibility at the institutional level
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-we-move-forward" class="md-nav__link">
+    How can we move forward?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    Key Takeaways
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-activity" class="md-nav__link">
+    Learning Activity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suggested-reading" class="md-nav__link">
+    Suggested Reading
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Unit 03   Technical Aspects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unit 03   Technical Aspects" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Unit 03   Technical Aspects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unit%2003%20-%20Technical%20Aspects/01_technical_aspects/" class="md-nav__link">
+        Learning Unit 3: Technical Aspects
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    Learning Objectives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#target-audience" class="md-nav__link">
+    Target Audience
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    Duration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-tools" class="md-nav__link">
+    Learning Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reproducibility-crisis-and-remedies" class="md-nav__link">
+    Reproducibility Crisis and Remedies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-reproducibility-crisis" class="md-nav__link">
+    What is the Reproducibility Crisis?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-reproducible-research-lifecycle" class="md-nav__link">
+    A Reproducible Research Lifecycle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-improve-reproducibility" class="md-nav__link">
+    How to improve reproducibility
+  </a>
+  
+    <nav class="md-nav" aria-label="How to improve reproducibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#care-about-data" class="md-nav__link">
+    Care about data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#care-about-code" class="md-nav__link">
+    Care about Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#care-about-environment" class="md-nav__link">
+    Care about Environment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reproducibility-at-the-institutional-level" class="md-nav__link">
+    Reproducibility at the institutional level
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-we-move-forward" class="md-nav__link">
+    How can we move forward?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    Key Takeaways
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-activity" class="md-nav__link">
+    Learning Activity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suggested-reading" class="md-nav__link">
+    Suggested Reading
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+  <nav class="md-tags" >
+    
+      
+      
+        <span class="md-tag">FAIR-by-Design Learning Materials</span>
+      
+    
+      
+      
+        <span class="md-tag">FAIR Learning Objects</span>
+      
+    
+      
+      
+        <span class="md-tag">Reproducibility crisis</span>
+      
+    
+  </nav>
+
+
+
+
+<h1 id="learning-unit-2-reproducibility-crisis-and-remedies">Learning Unit 2: Reproducibility Crisis and Remedies</h1>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Explain what reproducible research looks like in practice</li>
+<li>Explain the barriers to reproducibility and how to overcome them</li>
+</ul>
+<h2 id="target-audience">Target Audience</h2>
+<ul>
+<li>Data Librarians and other data curious</li>
+</ul>
+<h2 id="duration">Duration</h2>
+<ul>
+<li>60 mins</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Please read the two cases (<a href="./Activities/03a-Definition%20of%20Research%20Misconduct.md">Activity 3a</a> and <a href="./Activities/03b-The%20case%20of%20Brian%20Wansink%20-%20P%20Hacking.pdf">Activity 3b</a>)</li>
+</ul>
+<h2 id="learning-tools">Learning Tools</h2>
+<ul>
+<li>Training BBB room</li>
+<li>Browser</li>
+</ul>
+<p>The content is designed to be taught online, therefore a virtual teaching platform with breakout rooms is used to facilitate the content and activities.</p>
+<h2 id="reproducibility-crisis-and-remedies">Reproducibility Crisis and Remedies</h2>
+<p>This unit introduces the Reproducibility Crisis, what it is and actions that can be taken to implement reproducible workflows to counter this crisis.</p>
+<h2 id="what-is-the-reproducibility-crisis">What is the Reproducibility Crisis?</h2>
+<p><a href="https://www.nature.com/articles/533452a">Nature</a> did a rather extensive survey a few years ago on reproducibility. It showed that 90 % of the survey participants – the researchers - thinks that a reproducibility crisis is a fact - either slightly or significantly (1,576 scientist in sample).</p>
+<ul>
+<li>More than 70 % of researchers have failed to reproduce another scientist’s experiments. More than half have failed to reproduce their own experiments. Publishing replicated positive studies did not feel very motivating (24 %) and journals are reluctant towards publishing negative replication results (13 %)</li>
+<li>More than 60 % experienced failure in reproducibility due to pressure to publish and selective reporting. Adding to the difficulties to comply to reproducibility practices were also competition for grants and growing amount of bureaucracy demands</li>
+<li>Almost 90 % felt that a more robust experimental design and improved statistics and mentorship could help to solve the reproducibility crisis. Also enhanced practices and journal checklists were ranked high</li>
+<li>80 % think that research funders and publishers should do much more to address this issue</li>
+</ul>
+<p>Another analysis by <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13)62329-6/abstract">Macleod</a> estimates that 85% of biomedical research efforts are wasted</p>
+<p>In summary, lack of reproducibility has a negative impact on public trust in the conclusions of science. Trust and confidence are important for science, but have different meanings for scientists, citizens and policy-makers. The aim is to make science reproducible. Reproducible science is where all information relevant to the  work, including, but not limited to, text, data and code, is made available, such that an independent researcher can reproduce the results.</p>
+<p>The overarching categories of factors that impact reproducibility in research are:</p>
+<ul>
+<li><strong>Technical Factors:</strong> Issues related to tools, processes, and materials that can introduce variability or error.</li>
+<li><strong>Human Factors:</strong> Behavioral and procedural issues, such as errors or poor practices in data recording or sharing.</li>
+<li><strong>Study Design &amp; Statistics:</strong> Problems with the planning and execution of research studies, including misuse of statistical methods.</li>
+<li><strong>Rewards &amp; Incentives:</strong> Structural pressures in academia that encourage practices undermining reproducibility, such as prioritizing novelty over rigor.</li>
+</ul>
+<p>Reproducibility is one of the principle at the core of open science - Both focus on transparency and this principle is particularly important to reinforce the rigor of scientific results</p>
+<h2 id="a-reproducible-research-lifecycle">A Reproducible Research Lifecycle</h2>
+<p>The more of the research cycle is available and accessible, the more reproducible and verifiable the work. A paper only presents the output, but a format that is gaining more and more traction is the research compendium. This combines data and code with (information about the) environment, as well as usage information and a license. A research compendium can be made executable as well, allowing full reproduction of the project at the click of a button.</p>
+<p>Why code? A proper basic understanding of programming is incredibly useful to find, store, utilize, document and interpret data. It is the first step towards making research reproducible. Large datasets, or the option to use specifically developed tools, can also be reasons a researcher will need to use a programming language like R, or Python.</p>
+<p>Unfortunately, having access to data and a script does not guarantee that a project can be faithfully reproduced. Also, attaching code as supplementary material does not allow software to stand as a research product in its own right. Making science reproducible requires an open, adequate combination of data and software.</p>
+<p>Good version control is essential, and requires its own tools. Also, unlike a paper, software is not stand-alone, and requires extra work to ensure it can function faithfully on another machine, or in another time. Challenging, and there is a need to consider how to license software and how to cite used software (and what platform to use for publishing it).</p>
+<h2 id="how-to-improve-reproducibility">How to improve reproducibility</h2>
+<p>Data can be FAIR but if they are of poor quality or the methods of collection and analysis are biased or poorly described, the research will not necessarily be reproducible.
+It is necessary that experimental protocols, analysis methods, source codes and software used are also shared in a complete and detailed manner. These aspects are not always covered by FAIR.</p>
+<p>There are different levels of reproducibility.  the gold standard being that the code, all documentation and installation instructions are available as well as access to a virtual environment, such as a jupyter notebook, where you can re-run the analysis. Basically sharing data and code alone is not enough.</p>
+<h3 id="care-about-data">Care about data</h3>
+<p>To care about data we have to keep in mind that it is important to:</p>
+<ul>
+<li>Submit your datasets to a trustworthy repository​</li>
+<li>Provide accurate metadata​</li>
+<li>Choose the right licence (ODBL, CCBY, …)​</li>
+<li>When collecting data:​</li>
+<li>Use standards (units/measurement tools, reference documents​) and the right formats (open, sustainable, machine-readable) </li>
+<li>When processing​ data:</li>
+<li>Do not modify the raw data​</li>
+<li>Favor the command line: simple, clear, generic, sober programs with naming rules for example​</li>
+<li>Work in a structured, shared and backed-up environment</li>
+</ul>
+<h3 id="care-about-code">Care about Code</h3>
+<p>To care about code we have to keep in mind that it is important to:</p>
+<ul>
+<li>Describe, comment on your codes and their sequences using flowcharts, notebook​</li>
+<li>Use development standards: framework (Django, Symfony), common programming languages, free (R, Python) </li>
+<li>Work in a shared and protected environment ​</li>
+<li>Choose the right licenses: Apache, GNU GPLv3, MIT  ​</li>
+<li>Work with version management tools -&gt; software forge (a forge is a web-based collaborative software platform for developing and sharing computer applications),  continuous integration</li>
+<li>Archive your code (Software Heritage)​</li>
+<li>Publish your code/software in open journals</li>
+</ul>
+<h3 id="care-about-environment">Care about Environment</h3>
+<p>To care about environment  we have to keep in mind that it is important to:</p>
+<ul>
+<li>Describe well and prepare to open ​the environment, the underlying conditions of the experiment the tools (hardware, software, languages) used for processing, for calculation ​</li>
+<li>Describe the trace and version its progress in the data management plan/software of the project ​tools: Opidor, Data Stewardship, ARGOS (MA) ​</li>
+<li>Describe all research products to electronic laboratory notebooks (ElabFTW, LabGuru) with time stamping or TMS (time management system)​</li>
+<li>Facilitate the reuse of "digital objects" by depositing your data and codes in environments (repositories) indexed (PID), accessible, open, saved... ​</li>
+<li>Work in an open environment, shared with collaborators and saved (task management system, shared spaces,...) ​</li>
+<li>Link data, code and results to computational documents (Jupyter, Rstudio NoteBook) ​</li>
+<li>Index objects: by a controlled vocabulary (list, taxonomy, thesaurus, ontology) to classify, reason ​</li>
+<li>Publish in open journals: its results, data papers,​
+​
+And despite this, the reproducibility of the execution environment is not obvious.​</li>
+</ul>
+<h2 id="reproducibility-at-the-institutional-level">Reproducibility at the institutional level</h2>
+<p>This recently published report and related self-assessment worksheet, below, assists research institutions in understanding how reproducibility can be scaled up internally and supports scaling up of practices to the majority of the research community. It furthermore helps to create an understanding of what types of practices are helpful.</p>
+<p>Worth noting, that this report is focused on how well organised an organisation is at scaling up reproducibility practices (i.e., access and coordination). It is not about the maturity of reproducibility practices and how well they adhere to what is commonly understood to be best practice in reproducibility.</p>
+<ul>
+<li>Barker, M., &amp; ChueHong, N. (2024). Framework for scaling up reproducibility practices in research organisations. Zenodo. </li>
+<li>Barker, M., &amp; ChueHong, N. (2024). Assessment worksheet. Zenodo.</li>
+</ul>
+<h2 id="how-can-we-move-forward">How can we move forward?</h2>
+<ul>
+<li><strong>Build communities</strong> – elevating trust requires shared risk and reward : Use  of narrow metrics, e.g., pub count, impact factor, leads to poor  results – need a community to improve practices - Risky for single team  to invest heavily​</li>
+<li><strong>Collaborate with stakeholders</strong> (publishers and funders) to raise expectations  : transparent results, common terminology, elevated expectation, high quality software​</li>
+<li><strong>Invest in software ecosystems</strong> – easier to improve quality &amp; share investments:  high quality ecosystems, investement in software skills, new software tools and methodologies​</li>
+<li><strong>Transform software research into science</strong> – and capture science fundings: scientific software needs a research focus  - improve scientific software using science​</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<ol>
+<li>
+<p>Reproducibility has to be thought of as a long-term goal, where concepts and terminologies are to be discussed among different communities to make sure that there is a coherent terminologyin place thatall communities can understand. According to the literature review and interviews done, these types of engagement are more and more starting to occur</p>
+</li>
+<li>
+<p>There is a need for a bottom-up approach to shape policies that support reproducible research practices. This due to the fact that there are naturally huge differences between the different communities in terms of e.g. standards and methods used. This image shows exactly at which stages this policy development work is to take place in order to be correctly understood and supported by key stakeholders, such as research performing organisations, funders, publishers and service providers. Currently, very very few (NWO only exception) do not support nor require reproducibility, and publishers are afraid to include reproducibility requirements as they fear it might affect the submission rates in a negative manner. But we can see some progress here as well, where some publishers are adding some reproducibility requirements.</p>
+</li>
+<li>
+<p>There is a need to bake in the reproducibility aspects into the everyday research process and for it to thus become the norm – the way things are done within science. But these efforts are currently seen as time-consuming and efforts that adds on top of the ordinary research practices, so incentives are needed. Here the dis-incentives are mentioned, which are well-known challenges – the H-index and Impact Factors and the time preassures put on researchers.</p>
+</li>
+<li>
+<p>It is, however, not easy to change things in this respect, as being reproducibility compliant requires good data management practices. These skills are preferrably to be developed early on in the research career, which also helps in taking reproducible aspect into account during all stages of the research life cycle. Here is where especially the FAIR principles comes into play.</p>
+</li>
+<li>
+<p>There are lots of tools and infrastructures available to support good research data management practices and researchers are aware of these, but that is not really the problem in the end. The problem is that the interoperability between systems is not at an advanced stage just yet and thus hinders reproducible research workflows.</p>
+</li>
+</ol>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>Lack of reproducibility has a negative impact on public trust in the conclusions of science!</li>
+<li>Data reproducibility is key to Open Science, but FAIR principles alone don't guarantee it</li>
+<li>Proper management of data and code, combined with well-documented computational environments, is essential for ensuring the reproducibility of research results</li>
+<li>Data reproducibility practices must be supported by institutional policies that establish a strong regulatory framework to enforce and maintain them over time</li>
+</ul>
+<h2 id="learning-activity">Learning Activity</h2>
+<p>This unit has a learning activity about scientific misconduct and is described here: <a href="./Activities/">Activities</a></p>
+<p>To understand why research integrity matters, this activity examines what happens when such integrity is absent – research misconduct.</p>
+<h2 id="suggested-reading">Suggested Reading</h2>
+<ul>
+<li>
+<p>If you want to know more about reproducible research practices, you can look at more cases studies on <a href="http://www.practicereproducibleresearch.org/">http://www.practicereproducibleresearch.org/</a></p>
+</li>
+<li>
+<p>If you want to know more about reproducibility of scientific results in Europe: </p>
+<ul>
+<li><a href="https://op.europa.eu/en/publication-detail/-/publication/6bc538ad-344f-11eb-b27b-01aa75ed71a1">Reproducibility of scientific results in the EU</a></li>
+<li><a href="https://op.europa.eu/en/publication-detail/-/publication/36fa41a8-dbd5-11ec-a534-01aa75ed71a1/language-en">Assessing the reproducibility of research results in EU Framework Programmes for Research</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <nav class="md-footer__inner md-grid" aria-label="" >
+    
+    
+    <a href="../../Unit%2001%20%E2%80%93%20Reproducibility%20and%20Replicability/01_reproducibility_replicability/" class="md-footer__link md-footer__link--prev"
+      aria-label="Previous: Learning Unit 1: Reproducibility and Replicability in Scientific Research" rel="prev">
+      <div class="md-footer__button md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </div>
+      <div class="md-footer__title">
+        <span class="md-footer__direction">
+          Previous
+        </span>
+        <div class="md-ellipsis">
+          Learning Unit 1: Reproducibility and Replicability in Scientific Research
+        </div>
+      </div>
+    </a>
+    
+    
+    
+    <a href="../../Unit%2003%20-%20Technical%20Aspects/01_technical_aspects/" class="md-footer__link md-footer__link--next"
+      aria-label="Next: Learning Unit 3: Technical Aspects" rel="next">
+      <div class="md-footer__title">
+        <span class="md-footer__direction">
+          Next
+        </span>
+        <div class="md-ellipsis">
+          Learning Unit 3: Technical Aspects
+        </div>
+      </div>
+      <div class="md-footer__button md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+      </div>
+    </a>
+    
+  </nav>
+  
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+      <div style="display: flex; justify-content: space-between; align-items: center">
+      
+        <div class="md-copyright"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img
+              alt="Creative Commons License" style="border-width:0" src="https://raw.githubusercontent.com/FAIR-by-Design-Methodology/FAIR-by-Design_ToT/a9f9eb58f58a4c39a32609c160ca52922c41fc2a/resources/attachments/cc-by.png" /></a> Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+            Attribution 4.0 International License</a>.
+        </div>
+      
+      </div>
+
+    </div>
+    <div class="logos-container" style="display: block; text-align: center;">
+      <img alt="Skills4EOSC Logo" style="max-height:30px" src="https://raw.githubusercontent.com/FAIR-by-Design-Methodology/FAIR-by-Design_ToT/main/resources/attachments/logo-white.png" />
+      <img alt="EOSC Logo" style="height: 30px;" src="https://raw.githubusercontent.com/FAIR-by-Design-Methodology/FAIR-by-Design_ToT/main/resources/attachments/eosc-logo.png">
+      <img alt="Co-funded by the European Union Logo" style="height: 30px;" src="https://raw.githubusercontent.com/FAIR-by-Design-Methodology/FAIR-by-Design_ToT/main/resources/attachments/eu-logo.png" />
+      <img alt="UK Research and Innovation Logo" style="height: 30px;" src="https://raw.githubusercontent.com/FAIR-by-Design-Methodology/FAIR-by-Design_ToT/main/resources/attachments/ukri-logo.png" />
+    </div>
+    <div class="md-container">
+
+      <div class="cite-example md-copyright">
+        <div class="md-footer-meta__inner md-grid" style="justify-content: center; align-items: center;">
+          Cite as:
+          
+            
+            
+            
+              Surname, First_Name.
+            
+          
+          (2023-10-17). Training Name (1.0.0). 
+          <a href="https://doi.org/10.5072/zenodo.1234567">&nbsp;https://doi.org/10.5072/zenodo.1234567</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      
+    
+  </body>
+</html>
