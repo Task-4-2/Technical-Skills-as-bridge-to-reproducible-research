@@ -74,9 +74,11 @@ This unit introduces the learner to what reproducibility is and how it benefits 
 The content of the unit is described in more detail in this document where each slide used in the training is enriched with speaker notes: [Unit1_InstructorNotes](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/blob/59f6fd436090a06e6f0225714777763dece2fb29/resources/Learning%20Unit/attachments/Unit%201%20instructor%20notes%20DRAFT.docx)
 
 ## Related Learning Materials
-Follow the link to find activities. Activities 1 and 2 are used in this unit. [Activities](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/tree/main/resources/Learning%20Unit/Activities)
+
+Follow the link to find activities. Activities 1 and 2 are used in this unit. [Activities](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/tree/main/resources/Unit%2001%20%E2%80%93%20Reproducibility%20and%20Replicability/Activities)
 
 ## Summary
+
 Reproducibility means getting the same results with the same data, while replicability means getting the same results with new data. 
 
 Reproducibility is the first step toward replicability, and replicating results is how we build scientific knowledge.

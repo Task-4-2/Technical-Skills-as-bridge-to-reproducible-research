@@ -24,7 +24,7 @@ tags:
 
 ## Prerequisites
 
-- Please read the two cases ([Activity 3a](./Activities/03a-Definition%20of%20Research%20Misconduct.md) and [Activity 3b](./Activities/03b-The%20case%20of%20Brian%20Wansink%20-%20P%20Hacking.pdf))
+- Please read the two cases ([Activity 3a](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/blob/main/resources/Unit%2002%20%E2%80%93%20Reproducibility%20Crisis/Activities/03a-Definition%20of%20Research%20Misconduct.md) and [Activity 3b](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/blob/main/resources/Unit%2002%20%E2%80%93%20Reproducibility%20Crisis/Activities/03b-The%20case%20of%20Brian%20Wansink%20-%20P%20Hacking.pdf))
 
 ## Learning Tools
 
@@ -155,7 +155,7 @@ Worth noting, that this report is focused on how well organised an organisation 
 
 ## Learning Activity
 
-This unit has a learning activity about scientific misconduct and is described here: [Activities](./Activities/)
+This unit has a learning activity about scientific misconduct and is described here: [Activities](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/tree/main/resources/Unit%2002%20%E2%80%93%20Reproducibility%20Crisis/Activities)
 
 To understand why research integrity matters, this activity examines what happens when such integrity is absent – research misconduct.
 

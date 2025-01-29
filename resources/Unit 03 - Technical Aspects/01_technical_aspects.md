@@ -270,9 +270,9 @@ Improving reproducibility by providing a snapshot of the compute environment:
 ### Learning Activity
 This unit has two learning activities.
 
-- [Activity 1](./Activities/04-Git%20Blame%20in%20Action.md) - The learner practices using the Git blame feature. The activity uses the [Task-4-2/librarian-git-exercise](https://github.com/Task-4-2/librarian-git-exercise) repository as a demo repository.
+- [Activity 1](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/blob/main/resources/Unit%2003%20-%20Technical%20Aspects/Activities/04-Git%20Blame%20in%20Action.md) - The learner practices using the Git blame feature. The activity uses the [Task-4-2/librarian-git-exercise](https://github.com/Task-4-2/librarian-git-exercise) repository as a demo repository.
 
-- [Activity 2](./Activities/05-First%20Steps%20with%20Jupyter%20Notebooks.md) - 
+- [Activity 2](https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research/blob/main/resources/Unit%2003%20-%20Technical%20Aspects/Activities/05-First%20Steps%20with%20Jupyter%20Notebooks.md) - 
 The learner practices using Jupyter Notebooks. The activity uses the [Task-4-2/librarian-jupyter-notebook-example](https://github.com/Task-4-2/librarian-jupyter-notebook-example) repository as a demo repository.
 
 This activity can be conducted on any online Jupyter service that offers the possibility to clone a remote public Git repository. The links towards Binder and Google Colab are direct links, meaning that they will open a new browser window with the corresponding Git repository already cloned and a Jupyter notebook ready to be used. In case one of the links does not work, the other can freely be used as an alternative.
