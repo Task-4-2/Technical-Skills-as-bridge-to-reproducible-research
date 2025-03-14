@@ -47,11 +47,12 @@ authors:
     affiliation: "Tampere University"
 title: "Technical Skills as a bridge to Reproducible Research"
 abstract: "This is a learning path in three parts, on an introductory level aimed at data librarians and others who are curious about how what reproducibility is and how to implement practices that support reproducibility on a beginner level. The first module introduces the concept of reproducibility and why it is important. The second module is concerned with the reproducbility crisis and actions we can take to improve reproducibility. The third module is devoted to putting theory into practice. It combines lectures on best practices and data hygiene in file organisation with hands-on tutorials using Git, Github and Jupyter Notebooks to improve reproducibility in a collaborative environment."
-doi: 
-date-released: '2024-01-17'
+doi:
+date-released: '2025-03-14'
 license: CC-BY-4.0
 license-url: https://creativecommons.org/licenses/by/4.0/legalcode.txt
 keywords:
   - Reproducibility
   - Research Output
 repository: https://github.com/Task-4-2/Technical-Skills-as-bridge-to-reproducible-research
+version: v1
